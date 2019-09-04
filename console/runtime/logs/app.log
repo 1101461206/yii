@@ -1,0 +1,396 @@
+2019-08-28 11:33:06 [-][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class yii\db\FileCache does not exist in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:431
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(431): ReflectionClass->__construct('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#25 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "yii\db\FileCache". in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:433
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#8 [internal function]: yii\base\BaseObject->__construct(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#15 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#24 {main}
+2019-08-28 11:33:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.0eNrjrLMsg/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Users/zhaozilong'
+    'TERM_SESSION_ID' => '2620EC4B-535D-42CB-8FD2-C14787CB55CA'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.QzwuvZg6ep/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => './yii'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1566963182.53
+    'REQUEST_TIME' => 1566963182
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2019-08-28 11:33:41 [-][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class yii\db\FileCache does not exist in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:431
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(431): ReflectionClass->__construct('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#25 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "yii\db\FileCache". in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:433
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#8 [internal function]: yii\base\BaseObject->__construct(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#15 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#24 {main}
+2019-08-28 11:33:39 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.0eNrjrLMsg/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Users/zhaozilong'
+    'TERM_SESSION_ID' => '2620EC4B-535D-42CB-8FD2-C14787CB55CA'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.QzwuvZg6ep/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => './yii'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1566963219.19
+    'REQUEST_TIME' => 1566963219
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2019-08-28 11:35:20 [-][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class yii\db\FileCache does not exist in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:431
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(431): ReflectionClass->__construct('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#25 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "yii\db\FileCache". in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:433
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#8 [internal function]: yii\base\BaseObject->__construct(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#15 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#24 {main}
+2019-08-28 11:35:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.0eNrjrLMsg/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Users/zhaozilong'
+    'TERM_SESSION_ID' => '2620EC4B-535D-42CB-8FD2-C14787CB55CA'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.QzwuvZg6ep/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => './yii'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1566963319.18
+    'REQUEST_TIME' => 1566963319
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
+2019-08-28 11:35:33 [-][-][-][error][yii\base\InvalidConfigException] ReflectionException: Class yii\db\FileCache does not exist in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:431
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(431): ReflectionClass->__construct('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#16 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#23 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#24 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#25 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "yii\db\FileCache". in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php:433
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(365): yii\di\Container->getDependencies('yii\\db\\FileCach...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\db\\FileCach...', Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\db\\FileCach...', Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('cache', false)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php(283): yii\base\Module->get('cache', false)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Migration.php(91): yii\db\Schema->refresh()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\db\Migration->init()
+#8 [internal function]: yii\base\BaseObject->__construct(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('m140506_102106_...', Array, Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('m140506_102106_...', Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/MigrateController.php(201): yii\BaseYii::createObject(Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m140506_102106_...')
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#15 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#20 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#21 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#22 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#24 {main}
+2019-08-28 11:35:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.0eNrjrLMsg/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Users/zhaozilong'
+    'TERM_SESSION_ID' => '2620EC4B-535D-42CB-8FD2-C14787CB55CA'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.QzwuvZg6ep/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => './yii'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1566963331.8
+    'REQUEST_TIME' => 1566963331
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
