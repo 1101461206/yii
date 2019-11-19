@@ -24,6 +24,7 @@ return [
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
+        //用户认证配置
         'user' => [
             'identityClass' => 'backend\models\Userbackend',
             'enableAutoLogin' => true,
@@ -39,16 +40,21 @@ return [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error'],
+                    'logFile'=>'@runtime/logs/'.date(Ymd).'/error/'.date(d).'.log',
                 ],
+                [
+                    'class'=>'yii\log\FileTarget',
+                    'levels'=>['warning'],
+                    'logFile'=>'@runtime/logs/'.date(Ymd).'/warning/'.date(d).'.log',
+                ],
+
             ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'helper'=>[
-            'class'=>'common\components\Helper',
-        ],
+
         //basePath和baseUrl分别是对资源的目录和资源的url进行配置
         'view'=>[
             'theme'=>[
@@ -75,6 +81,18 @@ return [
             ],
         ],
         */
+
+        /**
+         * 自定义组件
+         * @plog  后台操作日志
+         */
+        'plog'=>[
+            'class'=>'backend\components\Log',
+        ],
+        'helper'=>[
+            'class'=>'common\components\Helper',
+        ],
+
 
     ],
 //    'as myBehavior2' =>  MyBehavior::className(),

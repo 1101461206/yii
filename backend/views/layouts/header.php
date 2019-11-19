@@ -230,42 +230,44 @@ use yii\helpers\Url;
 
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+<!--                        <img src="--><?//= $directoryAsset ?><!--/img/user2-160x160.jpg" class="user-image" alt="User Image"/>-->
                         <span class="hidden-xs"><?= Yii::$app->user->identity->nickname?> </span>
                     </a>
-<!--                    --><?//= Html::a('退出',Url::to(['backsite/logout']),['class'=>'dropdown-toggle','data-toggle'=>'dropdown'])?>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle"
-                                 alt="User Image"/>
-
-                            <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
-                            </p>
+<!--                            <img src="--><?//= $directoryAsset ?><!--/img/user2-160x160.jpg" class="img-circle"-->
+<!--                                 alt="User Image"/>-->
+<!--                            <p>-->
+<!--                                Alexander Pierce - Web Developer-->
+<!--                                <small>Member since Nov. 2012</small>-->
+<!--                            </p>-->
                         </li>
                         <!-- Menu Body -->
-                        <li class="user-body">
-                            <div class="col-xs-4 text-center">
-                                <a href="#">Followers</a>
-                            </div>
-                            <div class="col-xs-4 text-center">
-                                <a href="#">Sales</a>
-                            </div>
-                            <div class="col-xs-4 text-center">
-                                <a href="#">Friends</a>
-                            </div>
+<!--                        <li class="user-body">-->
+<!--                            <div class="col-xs-4 text-center">-->
+<!--                                <a href="#">Followers</a>-->
+<!--                            </div>-->
+<!--                            <div class="col-xs-4 text-center">-->
+<!--                                <a href="#">Sales</a>-->
+<!--                            </div>-->
+<!--                            <div class="col-xs-4 text-center">-->
+<!--                                <a href="#">Friends</a>-->
+<!--                            </div>-->
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                <?= Html::a(
+                                    '修改密码',
+                                    ['backsite/logout'],
+                                    ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
+                                ) ?>
                             </div>
                             <div class="pull-right">
                                 <?= Html::a(
-                                    'Sign out',
-                                    ['/site/logout'],
+                                    '退出',
+                                    ['backsite/logout'],
                                     ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
                                 ) ?>
                             </div>
@@ -274,8 +276,8 @@ use yii\helpers\Url;
                 </li>
 
                 <!-- User Account: style can be found in dropdown.less -->
-                <li>
-                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                <li style="width: 100px">
+<!--                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>-->
                 </li>
             </ul>
         </div>

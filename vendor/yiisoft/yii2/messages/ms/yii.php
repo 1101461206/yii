@@ -31,7 +31,7 @@ return [
     'File upload failed.' => 'Gagal memuat naik fail',
     'Home' => 'Utama',
     'Invalid data received for parameter "{param}".' => 'Data yang tidak sah untuk parameter "{param}".',
-    'Login Required' => 'Wajib untuk Log Masuk',
+    'Login Required' => 'Wajib untuk LogForm Masuk',
     'Missing required arguments: {params}' => 'Kehilangan penyataan yang mandatori: {params}',
     'Missing required parameters: {params}' => 'Kehilangan parameter yang mandatori: {params}',
     'No' => 'Tidak',

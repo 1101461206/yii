@@ -69,7 +69,7 @@ class ComposerStaticInit7e5f45b0f9e4df50440aaf67229f2820
         ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
+            'Psr\\LogForm\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Prophecy\\' => 9,
         ),
@@ -202,7 +202,7 @@ class ComposerStaticInit7e5f45b0f9e4df50440aaf67229f2820
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\LogForm\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),

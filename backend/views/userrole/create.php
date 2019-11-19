@@ -5,16 +5,16 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Userrole */
 
-$this->title = 'Create Userrole';
-$this->params['breadcrumbs'][] = ['label' => 'Userroles', 'url' => ['index']];
+$this->title = '添加角色';
+$this->params['breadcrumbs'][] = ['label' => '角色列表', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="userrole-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <?= $this->render('_form', [
         'model' => $model,
+        'role_all'=>$role_all,
+
     ]) ?>
 
 </div>

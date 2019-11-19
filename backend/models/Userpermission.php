@@ -38,7 +38,21 @@ class Userpermission extends \yii\db\ActiveRecord
             [['pid', 'aort', 'type', 'create_time', 'update', 'is_delete'], 'integer'],
             [['permission_name'], 'string', 'max' => 50],
             [['permission_route'], 'string', 'max' => 255],
+            ['fid','verificationfid'],
+            [['permission_name','permission_route'],'required'],
+            [['fid','pid'],'default','value'=>0],
+            [['permission_name','permission_route'],'unique'],
         ];
+    }
+
+    public function verificationfid()
+    {
+        if($this->fid){
+            if($this->pid==""){
+                $this->addError('pid',"顶级菜单不可以为空");
+            }
+        }
+
     }
 
     /**
@@ -71,26 +85,89 @@ class Userpermission extends \yii\db\ActiveRecord
             ->all();
         foreach ($role_all as $v) {
             $role_array[$v->permission_id] = array(
-                    'p_info'=>array(
-                        $v->permission_id=>$v->permission_name,
-                    ),
-                    'pid'=>$v->permission_id,
-              );
+                'p_info' => array(
+                    $v->permission_id => $v->permission_name,
+                ),
+                'pid' => $v->permission_id,
+            );
         }
+
+
         foreach ($role_array as $k => $v) {
             $role_list = Userpermission::find()
-                ->select(['permission_name', 'permission_id','type'])
+                ->select(['permission_name', 'permission_id', 'type', 'fid'])
                 ->where(['pid' => $k])
                 ->orderBy('aort')
                 ->asArray()
                 ->all();
-            $role_list=ArrayHelper::map($role_list,'permission_id','permission_name');
+            foreach ($role_list as $kk => $vv) {
+                switch ($vv['type']) {
+                    case 1:
+                        $role_array[$k]['list'][$vv['permission_id']]['fid'] = [$vv['permission_id'] => $vv['permission_name']];
+                        break;
+                    case 2:
+                        $fid_list[$vv['permission_id']] = $vv['permission_name'];
+                        $role_array[$k]['list'][$vv['fid']]['f_list'][$vv['permission_id']] = $vv['permission_name'];
+                        break;
+                    default:
+                        break;
+                }
 
-            $role_array[$k]['list'] = $role_list;
+
+            }
+
+
+//            echo "<pre>";
+//            var_dump($role_array);
+//            echo "<pre>";
+//            exit;
+//            $role_list=ArrayHelper::map($role_list,'permission_id','permission_name');
+
+//            $role_array[$k]['list'] = $role_list;
         }
 
 
         return $role_array;
+    }
+
+
+    /**检查是否有下级*/
+    public function checkname($id){
+        $info=Userpermission::find()
+            ->where(['permission_id'=>$id])
+            ->asArray()
+            ->one();
+        switch ($info['type']){
+            case 0:
+                $check_info=Userpermission::find()
+                    ->where(['pid'=>$id])
+                    ->asArray()
+                    ->all();
+                $num=count($check_info);
+                if($num>0){
+                   return false;
+                }else{
+                    return true;
+                }
+                break;
+            case 1:
+                $check_info=Userpermission::find()
+                    ->where(['fid'=>$id])
+                    ->asArray()
+                    ->all();
+                $num=count($check_info);
+                if($num>0){
+                    return false;
+                }else{
+                    return true;
+                }
+                break;
+            case 2:
+                return true;
+                break;
+            default:
+                break;
+        }
     }
 
 

@@ -137,7 +137,7 @@ Matches the *a* element with given URL
 <?php
 use \Codeception\Util\Locator;
 
-$I->see('Log In', Locator::href('/login.php'));
+$I->see('LogForm', Locator::href('/login.php'));
 ?>
 ```
  * `static` 

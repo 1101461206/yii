@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use common\models\User;
 use Yii;
 use backend\models\Userrole;
 use backend\models\userroleSearch;
@@ -53,29 +54,33 @@ class UserroleController extends Controller
 
 
     /**
-     * Creates a new Userrole model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
+     * 添加角色
      */
     public function actionCreate()
     {
-        $model = new Userrole();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->roleid]);
+        $model = new Userrole();
+        $rolemodel = new Userpermission();
+        $role_all = $rolemodel->role_all();
+
+        if ($model->load(Yii::$app->request->post()) ) {
+           if($model->in_role(Yii::$app->request->post())){
+               Yii::$app->getSession()->setFlash('success', '保存成功');
+               return $this->redirect(['index']);
+           }else{
+               Yii::$app->getSession()->setFlash('erroe', '保存失败');
+               return $this->redirect(['index']);
+           }
         }
 
         return $this->render('create', [
             'model' => $model,
+            'role_all'=>$role_all,
         ]);
     }
 
     /**
-     * Updates an existing Userrole model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
+     * 修改角色
      */
     public function actionUpdate($id)
     {
@@ -91,17 +96,25 @@ class UserroleController extends Controller
     }
 
     /**
-     * Deletes an existing Userrole model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
+     * 删除
      */
-    public function actionDelete($id)
+    public function actionDelete()
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+        $id=Yii::$app->request->post('id');
+        $model=new Userrole();
+        $check_role=$model->check_role($id);
+        if($check_role){
+            $info=$this->findModel($id)->delete();
+            $data['code']=$info ?1:0;
+            if(empty($data['code'])){
+                $data['msg']="删除失败";
+            }
+        }else{
+            $data['code']=0;
+            $data['msg']="该角色有用户在使用,无法删除!";
+        }
+        echo json_encode($data);
+        exit;
     }
 
     /**
@@ -117,6 +130,10 @@ class UserroleController extends Controller
         if (Yii::$app->request->isPost && !empty(Yii::$app->request->post('permission_id'))) {
             //var_dump($model->load(Yii::$app->request->post()));
             if ($model->allinster(Yii::$app->request->post())) {
+                $cache_id="role".Yii::$app->request->get('id');
+                if(Yii::$app->cache->get($cache_id)){
+                    Yii::$app->cache->delete($cache_id);
+                }
                 Yii::$app->getSession()->setFlash('success', '保存成功');
                 return $this->redirect(['index']);
             }
@@ -131,13 +148,43 @@ class UserroleController extends Controller
         ]);
     }
 
+    /**
+     * 修改状态
+     */
+    public function actionUserStatus(){
+        $info=Yii::$app->request->post();
+        $status=$info['status']==0?1:0;
+        $model=new Userrole();
+        if($model::updateAll(['is_delete'=>$status],['roleid'=>$info['id']])){
+            $data=array(
+                'code'=>1,
+            );
+            echo json_encode($data);
+        }
+
+        exit;
+    }
+
+    public function actionEditName(){
+        $info=Yii::$app->request->post();
+        $model=new Userrole();
+        if($model::updateAll(['role_name'=>$info['name']],['roleid'=>$info['id']])){
+            $data=array(
+                'code'=>1,
+            );
+        }else{
+            $data=array(
+                'code'=>0,
+            );
+        }
+        echo json_encode($data);
+        exit;
+
+    }
+
 
     /**
-     * Finds the Userrole model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Userrole the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
+     * 查询用户信息
      */
     protected function findModel($id)
     {
@@ -145,6 +192,15 @@ class UserroleController extends Controller
             return $model;
         }
 
-        throw new NotFoundHttpException('The requested page does not exist.');
+        throw new NotFoundHttpException('请求的页不存在');
     }
+
+
+    public function actionCeshi(){
+        echo "1";
+
+
+
+    }
+
 }

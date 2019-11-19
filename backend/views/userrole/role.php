@@ -32,8 +32,6 @@ if (Yii::$app->getSession()->hasFlash('error')) {
 }
 
 ?>
-
-
 <div class="box box-info">
     <div class="box-header with-border">
     </div>
@@ -43,38 +41,74 @@ if (Yii::$app->getSession()->hasFlash('error')) {
             'fieldConfig' => [
                 // 'options' => ['class' => 'form-group'],
                 'template' => "{input}",
-                //'labelOptions' => ['class' => 'col-sm-2 control-label'],
+                'labelOptions' => ['style' => 'width:100px'],
             ],
 
         ]); ?>
-        <div class="form-group">
-            <label class="col-sm-2 control-label"  style="border: 0;font-size: 20px;font-weight: bold;"><?php echo $role_name->role_name; ?></label>
-            <div class="col-sm-4">
+        <table style="width: 1000px; margin: auto;">
+            <tbody>
+            <tr>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 50px"></th>
+                <th style="width: 550px"></th>
+            </tr>
+            </tbody>
+            <tr>
+                <td colspan="10" style="font-size: 20px;font-weight: bold;"><?php echo $role_name->role_name; ?></td>
+            </tr>
+            <?= Html::hiddenInput('role_id', $role_name->roleid) ?>
 
-            </div>
-        </div>
+            <?php
+            foreach ($role_all as $k => $v) {
+                ?>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2">
+                        <?= Html::checkboxList("permission_id", !empty($role_all_def[$k]) ? $role_all_def[$k]['pid'] : "", $v['p_info'], ['style' => 'text-align: left', 'itemOptions' => ['onclick' => 'but(' . $v['pid'] . ')', 'id' => 'id' . $v['pid']]]) ?>
+                    </td>
 
-        <?= Html::hiddenInput('role_id', $role_name->roleid) ?>
-        <?php
-        foreach ($role_all as $k => $v) {
+                </tr>
+                <?php
+                foreach ($v['list'] as $kk => $vv) {
+                    ?>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td colspan="2">
+                            <?= Html::checkboxList("permission_id", !empty($role_all_def[$k]) ? $role_all_def[$k]['list'] : "", $vv['fid'], ['style' => 'text-align: left', 'itemOptions' => ['class' => 'but' . $v['pid'], 'onclick' => 'pid(' . $v['pid'] . ')']]) ?>
+                        </td>
+                        <?php
+                        if (!empty($vv['f_list'])) {
+                            ?>
+                            <td colspan="5" style="padding-left: 20px;">
+                                <?= Html::checkboxList("permission_id", !empty($role_all_def[$k]) ? $role_all_def[$k]['list'] : "", $vv['f_list'], ['itemOptions' => ['class' => 'but' . $v['pid'], 'onclick' => 'pid(' . $v['pid'] . ')']]) ?>
+                            </td>
+                            <?php
+                        }
+
+                        ?>
+                    </tr>
+                    <?php
+                }
+            }
             ?>
-            <div class="form-group">
-                <?= Html::checkboxList("permission_id", !empty($role_all_def[$k]) ? $role_all_def[$k]['pid'] : "", $v['p_info'], ['class' => 'col-sm-2', 'style' => 'text-align: right', 'itemOptions' => ['onclick' => 'but(' . $v['pid'] . ')', 'id' => 'id' . $v['pid']]]) ?>
-                <?= Html::checkboxList("permission_id", !empty($role_all_def[$k]) ? $role_all_def[$k]['list'] : "", $v['list'], ['class' => 'col-sm-4', 'itemOptions' => ['class' => 'but' . $v['pid'],'onclick'=>'pid('.$v['pid'].')']]) ?>
-            </div>
-            <?
-        }
 
-        ?>
-
-
+        </table>
     </div>
+
     <div class="box-footer">
         <div class='col-sm-2 control-label'></div>
         <button type="submit" class="btn btn-info">添加</button>
     </div>
 
     <?php ActiveForm::end(); ?>
+
 
 </div>
 
@@ -99,8 +133,8 @@ if (Yii::$app->getSession()->hasFlash('error')) {
 
     function pid(id) {
         var pid = 'id' + id;
-        var p=document.getElementById(pid).checked;
-        if(p==false){
+        var p = document.getElementById(pid).checked;
+        if (p == false) {
             document.getElementById(pid).checked = true;
         }
 

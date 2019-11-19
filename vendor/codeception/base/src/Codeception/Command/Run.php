@@ -59,10 +59,10 @@ use Symfony\Component\Console\Output\OutputInterface;
  *  --config (-c)         Use custom path for config
  *  --report              Show output in compact style
  *  --html                Generate html with results (default: "report.html")
- *  --xml                 Generate JUnit XML Log (default: "report.xml")
- *  --phpunit-xml         Generate PhpUnit XML Log (default: "phpunit-report.xml")
- *  --tap                 Generate Tap Log (default: "report.tap.log")
- *  --json                Generate Json Log (default: "report.json")
+ *  --xml                 Generate JUnit XML LogForm (default: "report.xml")
+ *  --phpunit-xml         Generate PhpUnit XML LogForm (default: "phpunit-report.xml")
+ *  --tap                 Generate Tap LogForm (default: "report.tap.log")
+ *  --json                Generate Json LogForm (default: "report.json")
  *  --colors              Use colors in output
  *  --no-colors           Force no colors in output (useful to override config file)
  *  --silent              Only outputs suite names and final results
@@ -128,10 +128,10 @@ class Run extends Command
             new InputOption('ext', 'e', InputOption::VALUE_IS_ARRAY  | InputOption::VALUE_REQUIRED, 'Run with extension enabled'),
             new InputOption('report', '', InputOption::VALUE_NONE, 'Show output in compact style'),
             new InputOption('html', '', InputOption::VALUE_OPTIONAL, 'Generate html with results', 'report.html'),
-            new InputOption('xml', '', InputOption::VALUE_OPTIONAL, 'Generate JUnit XML Log', 'report.xml'),
-            new InputOption('phpunit-xml', '', InputOption::VALUE_OPTIONAL, 'Generate PhpUnit XML Log', 'phpunit-report.xml'),
-            new InputOption('tap', '', InputOption::VALUE_OPTIONAL, 'Generate Tap Log', 'report.tap.log'),
-            new InputOption('json', '', InputOption::VALUE_OPTIONAL, 'Generate Json Log', 'report.json'),
+            new InputOption('xml', '', InputOption::VALUE_OPTIONAL, 'Generate JUnit XML LogForm', 'report.xml'),
+            new InputOption('phpunit-xml', '', InputOption::VALUE_OPTIONAL, 'Generate PhpUnit XML LogForm', 'phpunit-report.xml'),
+            new InputOption('tap', '', InputOption::VALUE_OPTIONAL, 'Generate Tap LogForm', 'report.tap.log'),
+            new InputOption('json', '', InputOption::VALUE_OPTIONAL, 'Generate Json LogForm', 'report.json'),
             new InputOption('colors', '', InputOption::VALUE_NONE, 'Use colors in output'),
             new InputOption(
                 'no-colors',

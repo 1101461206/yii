@@ -68,28 +68,26 @@ $this->params['breadcrumbs'][] = $this->title;
             ['attribute' => 'role', 'value' => 'role_name.role_name', 'headerOptions' => ['width' => '15%']],
             ['attribute' => 'status', 'headerOptions' => ['width' => '15%'], 'format' => 'html', 'value' => function ($model) {
                 $status = $model->status == 1 ? "开启" : "关闭";
-                return "<small class='label label-info'>$status</small>";
+                $class=$model->status==0?"label label-danger":"label label-info";
+                return "<small class='$class'>$status</small>";
 
             }],
             ['attribute' => 'created_at', 'headerOptions' => ['width' => '20%'], 'value' => function ($model) {
                 return date("Y-m-d H:s:i", $model->created_at);
             }],
-            ['class' => 'yii\grid\ActionColumn', 'header' => '操作', 'template' => '{edit}{delete}{resetpass}{role}',
+            ['class' => 'yii\grid\ActionColumn', 'header' => '操作', 'headerOptions'=>['width'=>'15%'],'template' => '{edit}{resetpass}{delete}',
                 'buttons' => [
                     'edit' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-edit"></i>', $url, ['title' => '编辑', 'class' => 'col-xs-1 col-sm-1']);
-                    },
-                    'delete' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-trash"></i>', "#", ['title' => '删除', 'class' => 'col-xs-1 col-sm-1', 'onclick' => 'del(' . $key . ')']);
+                        return Html::a('<i class="glyphicon glyphicon-edit"></i><span>编辑</span>', $url, ['title' => '编辑', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px']);
                     },
 
                     'resetpass' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-refresh"></i>', $url, ['title' => '重置密码', 'class' => 'col-xs-1 col-sm-1']);
+                        return Html::a('<i class="glyphicon glyphicon-refresh"></i><span>重置密码</span>', $url, ['title' => '重置密码', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px']);
+                    },
+                    'delete' => function ($url, $model, $key) {
+                        return Html::a('<i class="glyphicon glyphicon-trash"></i><span>删除</span>', "#", ['title' => '删除', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px', 'onclick' => 'del(' . $key . ')']);
                     },
 
-                    'role' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-lock"></i>', $url, ['title' => '设置权限', 'class' => 'col-xs-1 col-sm-1']);
-                    },
                 ],
 
             ],

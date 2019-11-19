@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+use common\models\User;
 use Yii;
 
 /**
@@ -28,7 +29,11 @@ class Userrole extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['role_name', 'is_delete'], 'required'],
             [['created', 'is_delete'], 'integer'],
+            // unique表示唯一性
+            [['role_name'],'unique'],
+            [['role_name'],'trim'],
             [['role_name'], 'string', 'max' => 50],
         ];
     }
@@ -45,4 +50,48 @@ class Userrole extends \yii\db\ActiveRecord
             'is_delete' => '状态',
         ];
     }
+
+    /**添加角色*/
+    public function in_role($data)
+    {
+        if (!$this->validate()) {
+            return null;
+        }
+        $role = new Userrole();
+        $role->role_name = $data['Userrole']['role_name'];
+        $role->is_delete = $data['Userrole']['is_delete'];
+        $role->created = time();
+        if ($role->save()) {
+            $p_info = array();
+            foreach ($data['permission_id'] as $k => $v) {
+                $p_info[] = [$role->roleid, $v, time()];
+            }
+            $in = ['role_id', 'permission_id', 'create_time'];
+            Yii::$app->db->createCommand()->batchInsert('user_permission_relation',$in,$p_info)->execute();
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+    /**检测角色*/
+    public function check_role($id){
+        $user=new User();
+        $data=array();
+        $role_all = User::find()
+            ->where(['role' => $id])
+            ->count();
+        if($role_all>0){
+            return  false;
+        }else{
+            return true;
+        }
+
+        exit;
+    }
+
+
+
+
 }

@@ -394,3 +394,467 @@ $_SERVER = [
     ]
     'argc' => 3
 ]
+2019-11-15 11:29:02 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 11:28:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573788537.61
+    'REQUEST_TIME' => 1573788537
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]
+2019-11-15 11:37:01 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 11:36:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573789016.65
+    'REQUEST_TIME' => 1573789016
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]
+2019-11-15 13:09:45 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 13:09:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573794583
+    'REQUEST_TIME' => 1573794583
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]
+2019-11-15 13:11:51 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 13:11:49 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573794709.11
+    'REQUEST_TIME' => 1573794709
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]
+2019-11-15 14:13:54 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 14:13:52 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573798432.04
+    'REQUEST_TIME' => 1573798432
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]
+2019-11-15 17:12:59 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 17:12:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573809177.03
+    'REQUEST_TIME' => 1573809177
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]
+2019-11-15 17:13:59 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 17:13:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573809237.14
+    'REQUEST_TIME' => 1573809237
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]
+2019-11-15 17:15:14 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "log" component to use one or more database targets before executing this migration. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/log/migrations/m141106_185632_log_init.php(63): m141106_185632_log_init->getDbTargets()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(725): m141106_185632_log_init->up()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m141106_185632_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Applications/MAMP/htdocs/web/yii/yii(23): yii\base\Application->run()
+#12 {main}
+2019-11-15 17:15:13 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1n/fvl2ng9j6ql2lgs97l3npyt40000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.EfDNKyOSCW/Render'
+    'TERM_PROGRAM_VERSION' => '404.1'
+    'OLDPWD' => '/Applications/MAMP/htdocs/web'
+    'TERM_SESSION_ID' => '6D6F95AB-042D-4538-A8B3-877DE2296ABC'
+    'USER' => 'zhaozilong'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.rq1tT7QdOb/Listeners'
+    'PATH' => '/usr/local/bin:/usr/local/sbin:/Users/zhaozilong/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php7.0.31/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:'
+    'PWD' => '/Applications/MAMP/htdocs/web/yii'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhaozilong'
+    'LOGNAME' => 'zhaozilong'
+    '_' => '/Applications/MAMP/bin/php/php7.0.31/bin/php'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1573809313.54
+    'REQUEST_TIME' => 1573809313
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/log/migrations/'
+    ]
+    'argc' => 3
+]

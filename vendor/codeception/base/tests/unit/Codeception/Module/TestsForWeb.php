@@ -966,7 +966,7 @@ abstract class TestsForWeb extends \Codeception\Test\Unit
         $this->module->amOnPage('/form/example2');
         $this->module->fillField('input[name=username]', 'davert');
         $this->module->fillField('input[name=password]', '123456');
-        $this->module->click('Log on');
+        $this->module->click('LogForm on');
         $login = data::get('form');
         $this->assertEquals('davert', $login['username']);
         $this->assertEquals('123456', $login['password']);

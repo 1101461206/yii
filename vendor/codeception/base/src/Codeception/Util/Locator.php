@@ -66,7 +66,7 @@ class Locator
      * <?php
      * use \Codeception\Util\Locator;
      *
-     * $I->see('Log In', Locator::href('/login.php'));
+     * $I->see('LogForm In', Locator::href('/login.php'));
      * ?>
      * ```
      *

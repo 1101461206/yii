@@ -45,7 +45,7 @@ class ExplainAction extends Action
         $timings = $this->panel->calculateTimings();
 
         if (!isset($timings[$seq])) {
-            throw new HttpException(404, 'Log message not found.');
+            throw new HttpException(404, 'LogForm message not found.');
         }
 
         $query = $timings[$seq]['info'];

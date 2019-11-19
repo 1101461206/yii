@@ -99,7 +99,7 @@ As a parameter, you can specify the link name or a valid CSS or XPath selector.
 
 ```php
 <?php
-$I->click('Log in');
+$I->click('LogForm');
 // CSS selector applied
 $I->click('#login a');
 // XPath

@@ -1,6 +1,8 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
+
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -39,7 +41,18 @@ $fieldOptions2 = [
             ->label(false)
             ->passwordInput(['placeholder' => $model->getAttributeLabel('password_hash')]) ?>
 
-        <div class="row">
+        <?php echo $form->field($model,'verifyCode',['template'=>'<div class="form-group has-feedback">{input}'.Captcha::widget([
+                'model' =>$model,
+                'attribute' =>'verifyCode',//模型中也要申明
+                'captchaAction' =>'backsite/captcha',//指定操作
+                'template'  =>'{image}',//image代表此处生成验证码图片
+                'imageOptions'   =>[
+                    //以下atrribute属性，可自己扩展
+                    'title'  =>'点击刷新',
+                    'style' =>'margin-left:20px;'
+                ],
+            ]).'{error}</div>'])->textInput(['class'=>'form-group input-text size-L','placeholder'=>'验证码','style'=>'width:150px,padding-left:25px','id'=>'verifyCode']);?>
+            <div class="row">
             <div class="col-xs-8">
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
             </div>

@@ -52,4 +52,28 @@ class Helper
         return $data;
     }
 
+    /**
+     * 返回值格式化
+     */
+    public function mages_format($code,$msg,$type="josn",$error=""){
+        switch ($type){
+            case "josn":
+                $data=array(
+                    'code'=>$code,
+                    'msg'=>$msg,
+                );
+                if($error){
+                    $data['error']=$error;
+                }
+            $data=json_encode($data);
+                break;
+
+            default:
+                break;
+
+        }
+
+
+    }
+
 }

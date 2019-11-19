@@ -2,6 +2,8 @@
 
 namespace backend\controllers;
 
+use backend\models\Userpermission;
+use backend\models\UserPermissionRelation;
 use common\components\Helper;
 use Yii;
 use backend\models\UserBackend;
@@ -11,6 +13,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use backend\models\AdduserForm;
+//use backend\components\Log;
 
 /**
  * UserBackendController implements the CRUD actions for UserBackend model.
@@ -24,10 +27,14 @@ class UserBackendController extends Controller
     public function behaviors()
     {
         return [
+            // 'myBehavior' => \backend\components\MyBehavior::className(),
+            'as access'=>[
+                'class' => 'backend\components\AccessControl',
+            ],
             'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
+                'class'=>VerbFilter::className(),
+                'actions'=>[
+                    'delete'=>['POST'],
                 ],
             ],
         ];
@@ -42,8 +49,6 @@ class UserBackendController extends Controller
         $searchModel = new UserBackendSerach();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $role_name = Yii::$app->db->createCommand('select roleid,role_name from user_role')->queryAll();
-
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -70,6 +75,7 @@ class UserBackendController extends Controller
                 Yii::$app->getSession()->setFlash('error', '保存失败');
             }
             if ($model->signup()) {
+                Yii::$app->plog->ins('user-backend/adduser','添加管理员--'.$model->username,1);
                 Yii::$app->getSession()->setFlash('success', '保存成功');
                 return $this->redirect(['index']);
             }
@@ -104,6 +110,7 @@ class UserBackendController extends Controller
                 }
                 $model->updated_at=time();
                 if ($model->save()) {
+                    Yii::$app->plog->ins('user-backend/edit','修改管理员--'.$model->username,1);
                     Yii::$app->getSession()->setFlash('success', '修改成功');
                     return $this->redirect(['index']);
                 }
@@ -124,7 +131,9 @@ class UserBackendController extends Controller
     {
         $id = Yii::$app->request->post('id');
         $data = array();
+        $info=$this->findModel($id);
         if ($id && $this->findModel($id)->delete()) {
+            Yii::$app->plog->ins('user-backend/delete','删除管理员--'.$info->username,1);
             $data['code'] = 1;
         } else {
             $data['code'] = 0;
@@ -148,6 +157,7 @@ class UserBackendController extends Controller
             $model->salt=$salt;
             $model->updated_at=time();
             if($model->save()){
+                Yii::$app->plog->ins('user-backend/delete','修改密码--'.$model->username,1);
                 Yii::$app->getSession()->setFlash('success', '修改成功');
             }else{
                 Yii::$app->getSession()->setFlash('success', '修改失败');
@@ -160,6 +170,7 @@ class UserBackendController extends Controller
             'model'=>$model,
         ]);
     }
+
 
     /**
      * 查询用户信息

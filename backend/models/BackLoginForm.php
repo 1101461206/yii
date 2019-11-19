@@ -4,6 +4,7 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use backend\models\UserBackend as User;
+use yii\captcha\Captcha;
 
 /**
  * Login form
@@ -13,7 +14,7 @@ class BackLoginForm extends Model
     public $username;
     public $password_hash;
     public $rememberMe = true;
-
+    public $verifyCode;
     private $_user;
 
 
@@ -24,11 +25,14 @@ class BackLoginForm extends Model
     {
         return [
             // username and password are both required
-            [['username', 'password_hash'], 'required'],
+            [['username', 'password_hash','verifyCode'], 'required'],
+            ['verifyCode', 'captcha','captchaAction'=>'backsite/captcha','message'=>'验证码不正确'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
             ['password_hash', 'validatePassword'],
+
+
         ];
     }
 
@@ -37,6 +41,7 @@ class BackLoginForm extends Model
         return [
             'username'=>'用户名',
             'password_hash'=>'密码',
+            'verifyCode'=>'验证码',
         ];
     }
 

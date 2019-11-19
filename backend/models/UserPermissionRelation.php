@@ -49,6 +49,10 @@ class UserPermissionRelation extends \yii\db\ActiveRecord
         ];
     }
 
+    /**
+     * 已授权权限
+     * @role_id  角色ID
+     */
     public function role_all_def($role_id)
     {
         $info = UserPermissionRelation::find()
@@ -114,6 +118,31 @@ class UserPermissionRelation extends \yii\db\ActiveRecord
             return $info;
         }
 
+    }
+
+    /**
+     * menu
+     */
+    public function menu($id)
+    {
+        $info = UserPermissionRelation::find()
+            ->select(['p.permission_name','p.permission_route','p.type','p.pid','p.aort','p.permission_id'])
+            ->from('user_permission_relation r')
+            ->leftJoin('user_permission p','p.permission_id=r.permission_id')
+            ->where(['role_id' => $id])
+            ->asArray()
+            ->all();
+        $menu=array();
+        foreach ($info as $k =>$v)
+        {
+            if($v['type']==0){
+                $menu[$v['permission_id']]=$v;
+            }elseif($v['type']==1)
+            {
+                $menu[$v['pid']]['list'][]=$v;
+            }
+        }
+        return $menu;
     }
 
 

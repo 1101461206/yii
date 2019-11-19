@@ -14,7 +14,7 @@ use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\RotatingFileHandler;
 
 /**
- * Log suites/tests/steps using Monolog library.
+ * LogForm suites/tests/steps using Monolog library.
  * Monolog should be installed additionally by Composer.
  *
  * ```

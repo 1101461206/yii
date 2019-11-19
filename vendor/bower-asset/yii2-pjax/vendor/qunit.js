@@ -1218,7 +1218,7 @@ window.onerror = function ( error, filePath, linerNr ) {
 function done() {
 	config.autorun = true;
 
-	// Log the last module results
+	// LogForm the last module results
 	if ( config.currentModule ) {
 		runLoggingCallbacks( "moduleDone", QUnit, {
 			name: config.currentModule,

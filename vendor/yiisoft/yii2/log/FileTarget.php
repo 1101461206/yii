@@ -32,7 +32,7 @@ class FileTarget extends Target
     public $logFile;
     /**
      * @var bool whether log files should be rotated when they reach a certain [[maxFileSize|maximum size]].
-     * Log rotation is enabled by default. This property allows you to disable it, when you have configured
+     * LogForm rotation is enabled by default. This property allows you to disable it, when you have configured
      * an external tools for log rotation on your server.
      * @since 2.0.3
      */
