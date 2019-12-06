@@ -11,13 +11,8 @@ class BacksiteController extends Controller
     public function actions()
     {
         return [
-//                 'captcha' =>
-//                    [
-//                        'class' => 'yii\captcha\CaptchaAction',
-//                        'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-//                    ],  //默认的写法
             'captcha' => [
-                'class' => 'yii\captcha\Captchanum',
+                'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
               //  'backColor' => 0x000000,//背景颜色
                 'maxLength' => 6, //最大显示个数
@@ -35,9 +30,9 @@ class BacksiteController extends Controller
     public function actionLogin()
     {
         $this->layout = "main-login";
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
+//        if (!Yii::$app->user->isGuest) {
+//            return $this->goHome();
+//        }
 
         $model = new BackLoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {

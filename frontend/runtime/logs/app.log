@@ -3198,3 +3198,258 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2019-12-06 15:48:04 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.ims_index' doesn't exist in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(14): yii\db\ActiveQuery->one()
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.ims_index' doesn't exist
+The SQL being executed was: SELECT * FROM `ims_index` WHERE `id`=1 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(14): yii\db\ActiveQuery->one()
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii.ims_index' doesn't exist
+)
+
+2019-12-06 15:48:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '49933'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618484.24
+    'REQUEST_TIME' => 1575618484
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:48:20 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.ims_index' doesn't exist in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(14): yii\db\ActiveQuery->one()
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.ims_index' doesn't exist
+The SQL being executed was: SELECT * FROM `ims_index` WHERE `id`=1 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(14): yii\db\ActiveQuery->one()
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii.ims_index' doesn't exist
+)
+
+2019-12-06 15:48:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '49939'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618500.38
+    'REQUEST_TIME' => 1575618500
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:57:53 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.ims_index' doesn't exist in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(14): yii\db\ActiveQuery->one()
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.ims_index' doesn't exist
+The SQL being executed was: SELECT * FROM `ims_index` WHERE `id`=1 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1158): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(14): yii\db\ActiveQuery->one()
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii.ims_index' doesn't exist
+)
+
+2019-12-06 15:57:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '50104'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619073.3
+    'REQUEST_TIME' => 1575619073
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]

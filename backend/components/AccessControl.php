@@ -20,6 +20,7 @@ class AccessControl extends ActionFilter
         // 当前登录用户的id
         $user = Yii::$app->getUser();
 
+        //$user->id=54;
 
         if ($user->getIsGuest()) {
             echo "<script>alert('请先登录');location.href='?r=backsite/login'</script>";

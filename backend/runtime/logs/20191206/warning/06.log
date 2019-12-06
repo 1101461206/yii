@@ -1,0 +1,1008 @@
+2019-12-06 15:36:33 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:36:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'user-backend'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user-backend'
+    'REQUEST_URI' => '/backend/web/index.php?r=user-backend'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575617793.08
+    'REQUEST_TIME' => 1575617793
+    'argv' => [
+        0 => 'r=user-backend'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:36:35 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:36:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=user-backend'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575617795.62
+    'REQUEST_TIME' => 1575617795
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:36:36 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:36:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575617796.47
+    'REQUEST_TIME' => 1575617796
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:36:37 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:36:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575617797.22
+    'REQUEST_TIME' => 1575617797
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:37:59 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:37:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49559'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575617879.26
+    'REQUEST_TIME' => 1575617879
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:46:56 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:46:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49914'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618416.12
+    'REQUEST_TIME' => 1575618416
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:48:04 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:48:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49934'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618484.42
+    'REQUEST_TIME' => 1575618484
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:48:20 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:48:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '49940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618500.5
+    'REQUEST_TIME' => 1575618500
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:56:17 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:56:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50086'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618977.03
+    'REQUEST_TIME' => 1575618977
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:56:17 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:56:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50086'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618977.15
+    'REQUEST_TIME' => 1575618977
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:56:18 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:56:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50086'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618978.86
+    'REQUEST_TIME' => 1575618978
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:56:19 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:56:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50086'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575618978.99
+    'REQUEST_TIME' => 1575618978
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:57:53 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:57:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50105'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619073.42
+    'REQUEST_TIME' => 1575619073
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:58:25 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:58:25 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619105.92
+    'REQUEST_TIME' => 1575619105
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:58:30 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:58:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619110.29
+    'REQUEST_TIME' => 1575619110
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:58:31 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:58:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619111.68
+    'REQUEST_TIME' => 1575619111
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:58:32 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:58:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619112.27
+    'REQUEST_TIME' => 1575619112
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:58:32 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:58:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619112.69
+    'REQUEST_TIME' => 1575619112
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:58:33 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:58:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619113
+    'REQUEST_TIME' => 1575619112
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 15:58:33 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 15:58:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619113.32
+    'REQUEST_TIME' => 1575619113
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-06 16:00:28 [::1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '53': JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE
+2019-12-06 16:00:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '50187'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575619228.75
+    'REQUEST_TIME' => 1575619228
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]

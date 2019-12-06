@@ -17,21 +17,21 @@ class ImsnewsController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
-    {
-        return [
-            // 'myBehavior' => \backend\components\MyBehavior::className(),
-            'as access' => [
-                'class' => 'backend\components\AccessControl',
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+//    public function behaviors()
+//    {
+//        return [
+//            // 'myBehavior' => \backend\components\MyBehavior::className(),
+//            'as access' => [
+//                'class' => 'backend\components\AccessControl',
+//            ],
+//            'verbs' => [
+//                'class' => VerbFilter::className(),
+//                'actions' => [
+//                    'delete' => ['POST'],
+//                ],
+//            ],
+//        ];
+//    }
 
     /**
      * Lists all Imsnews models.
