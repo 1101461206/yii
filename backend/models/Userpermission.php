@@ -39,7 +39,7 @@ class Userpermission extends \yii\db\ActiveRecord
             [['permission_name'], 'string', 'max' => 50],
             [['permission_route'], 'string', 'max' => 255],
             ['fid','verificationfid'],
-            [['permission_name','permission_route'],'required'],
+            [['permission_name'],'required'],
             [['fid','pid'],'default','value'=>0],
             [['permission_name','permission_route'],'unique'],
         ];

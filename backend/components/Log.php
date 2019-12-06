@@ -12,6 +12,7 @@ use backend\models\LogForm;
  * @info 操作内容
  * @time 操作时间
  * @IP   操作IP地址
+ * @status 0-失败 1-成功
  *
  */
 class Log

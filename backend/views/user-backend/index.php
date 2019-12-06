@@ -38,16 +38,17 @@ $this->params['breadcrumbs'][] = $this->title;
     }
     ?>
 
-    <?php echo $this->render('_search',[
-            'searchModel'=>$searchModel,
-            'role_name'=>$role_name,
+    <?php echo $this->render('_search', [
+        'searchModel' => $searchModel,
+        'role_name' => $role_name,
     ]); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         //'filterModel' => $searchModel,
         'tableOptions' => ['class' => 'table table-bordered table-striped text-center'],
         'layout' => '<div class="box box-primary">
-                <div class="box-header">' . Html::a("添加管理员", ['adduser'], ['class' => 'btn btn-success btn-sm pull-left']) . '
+                <div class="box-header">
+                   <a href="'.Url::to(['user-backend/adduser']).'" class="btn btn-success btn-sm pull-left">添加管理员</a>
                     <div class="pull-right col-xs-2">
                         {summary}
                     </div>
@@ -68,24 +69,24 @@ $this->params['breadcrumbs'][] = $this->title;
             ['attribute' => 'role', 'value' => 'role_name.role_name', 'headerOptions' => ['width' => '15%']],
             ['attribute' => 'status', 'headerOptions' => ['width' => '15%'], 'format' => 'html', 'value' => function ($model) {
                 $status = $model->status == 1 ? "开启" : "关闭";
-                $class=$model->status==0?"label label-danger":"label label-info";
+                $class = $model->status == 0 ? "label label-danger" : "label label-info";
                 return "<small class='$class'>$status</small>";
 
             }],
             ['attribute' => 'created_at', 'headerOptions' => ['width' => '20%'], 'value' => function ($model) {
                 return date("Y-m-d H:s:i", $model->created_at);
             }],
-            ['class' => 'yii\grid\ActionColumn', 'header' => '操作', 'headerOptions'=>['width'=>'15%'],'template' => '{edit}{resetpass}{delete}',
+            ['class' => 'yii\grid\ActionColumn', 'header' => '操作', 'headerOptions' => ['width' => '15%'], 'template' => '{edit}{resetpass}{delete}',
                 'buttons' => [
                     'edit' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-edit"></i><span>编辑</span>', $url, ['title' => '编辑', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px']);
+                        return Html::a('<i class="glyphicon glyphicon-edit"></i><span>编辑</span>', $url, ['title' => '编辑', 'class' => 'btn btn-info btn-xs', 'style' => 'margin-left: 5px']);
                     },
 
                     'resetpass' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-refresh"></i><span>重置密码</span>', $url, ['title' => '重置密码', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px']);
+                        return Html::a('<i class="glyphicon glyphicon-refresh"></i><span>重置密码</span>', $url, ['title' => '重置密码', 'class' => 'btn btn-info btn-xs', 'style' => 'margin-left: 5px']);
                     },
                     'delete' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-trash"></i><span>删除</span>', "#", ['title' => '删除', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px', 'onclick' => 'del(' . $key . ')']);
+                        return Html::a('<i class="glyphicon glyphicon-trash"></i><span>删除</span>', "#", ['title' => '删除', 'class' => 'btn btn-info btn-xs', 'style' => 'margin-left: 5px', 'onclick' => 'del(' . $key . ')']);
                     },
 
                 ],
@@ -99,43 +100,44 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 <script>
     function del(id) {
-        swal({
-                title: "确定要删除该用户吗",
-                text: "删除后将无法恢复",
-                type: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "确定删除！",
-                cancelButtonText: "取消删除",
-                closeOnConfirm: false,
-                showLoaderOnConfirm: true,
-            }, function () {
+        swal.fire({
+            icon: "info",
+            title: "确定要删除该用户吗",
+            text: "删除后将无法恢复",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "确定删除！",
+            cancelButtonText: "取消删除",
+            closeOnConfirm: false,
+            showLoaderOnConfirm: true,
+        }).then((result) => {
+            if (result.value) {
                 $.ajax({
                     url: "<?=Url::to(['user-backend/delete'])?>",
                     type: 'post',
                     data: {'id': id},
                     dataType: 'json',
                     success: function (data) {
-                        var data1 =eval(data);
+                        var data1 = eval(data);
                         if (data1.code == 1) {
-                            swal({
-                                    title: "删除成功",
-                                    type: "success",
-                                    showCancelButton: false,
-                                    confirmButtonColor: "#DD6B55",
-                                    confirmButtonText: "确定删除！",
-                                },
-                                function () {
-                                    history.go(0);
-                                },
-                            );
-                        }else{
-                            swal('删除失败',"",'error');
+                            swal.fire({
+                                title: "删除成功",
+                                icon: "success",
+                                showCancelButton: false,
+                                confirmButtonColor: "#DD6B55",
+                                confirmButtonText: "确定删除！",
+                            }).then((value) => {
+                                history.go(0);
+                            })
+                        } else {
+                            swal.fire('删除失败', "", 'error');
                         }
                     },
                 });
-            },
-        )
+            }
+
+        })
+
     };
 
 </script>

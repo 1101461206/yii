@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
     <!--    --><?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
-<!--    --><?php //echo $this->render('_search', ['model' => $model]); ?>
+    <!--    --><?php //echo $this->render('_search', ['model' => $model]); ?>
 
     <div class="box box-primary">
 
@@ -59,56 +59,60 @@ $this->params['breadcrumbs'][] = $this->title;
                 foreach ($data as $k => $v) {
                     ?>
                     <tr style="color: red;font-weight: bold; ">
-                        <td><?=$v['id']?></td>
-                        <td><?=$v['name']?></td>
+                        <td><?= $v['id'] ?></td>
+                        <td><?= $v['name'] ?></td>
                         <td>顶级菜单栏</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td>
-                            <small class='<?=$v['is_delete']=="0"?"label label-info":"label label-danger"?>'><?=$v['is_delete']==0?"启用":"关闭"?></small>
+                            <small class='<?= $v['is_delete'] == "0" ? "label label-info" : "label label-danger" ?>'><?= $v['is_delete'] == 0 ? "启用" : "关闭" ?></small>
                         </td>
                         <td>
-                           <?=Html::a('<i class="glyphicon glyphicon-pencil"></i><span>编辑</span>', Url::to(['userpermission/edit','id'=>$v['id']]), ['title' => '编辑', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px']);?>
-                           <?=Html::a('<i class="glyphicon glyphicon-cog"></i><span>状态</span>', "#", ['title' => '关闭', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del('.$v['id'].','.$v['is_delete'].')','style'=>'margin-left: 5px']);?>
+                            <?= Html::a('<i class="glyphicon glyphicon-pencil"></i><span>编辑</span>', Url::to(['userpermission/edit', 'id' => $v['id']]), ['title' => '编辑', 'class' => 'btn btn-info btn-xs', 'style' => 'margin-left: 5px']); ?>
+                            <?= Html::a('<i class="glyphicon glyphicon-cog"></i><span>状态</span>', "#", ['title' => '关闭', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del(' . $v['id'] . ',' . $v['is_delete'] . ')', 'style' => 'margin-left: 5px']); ?>
                         </td>
                     </tr>
                     <?php
-                    if(!empty($v['fid'])){
-                        foreach ($v['fid'] as $fk=>$fv){
+                    if (!empty($v['fid'])) {
+                        foreach ($v['fid'] as $fk => $fv) {
 //                        echo "<pre>";
 //                        var_dump($fv);
 //                        echo "<pre>";
 
                             ?>
                             <tr>
-                                <td><?=$fv['id']?></td>
-                                <td><?=$fv['name']?></td>
+                                <td><?= $fv['id'] ?></td>
+                                <td><?= $fv['name'] ?></td>
                                 <td>二级菜单栏</td>
-                                <td><?=$v['name']?></td>
-                                <td><?=$v['name']?></td>
-                                <td><?=$fv['page']?></td>
-                                <td><small class='<?=$fv['is_delete']=="0"?"label label-info":"label label-danger"?>'><?=$fv['is_delete']==0?"启用":"关闭"?></small></td>
+                                <td><?= $v['name'] ?></td>
+                                <td><?= $v['name'] ?></td>
+                                <td><?= $fv['page'] ?></td>
                                 <td>
-                                    <?=Html::a('<i class="glyphicon glyphicon-pencil "></i><span>编辑</span>', Url::to(['userpermission/edit','id'=>$fv['id']]), ['title' => '编辑', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px']);?>
-                                    <?=Html::a('<i class="glyphicon glyphicon-cog"></i><span>状态</span>', "#", ['title' => '关闭', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del('.$fv['id'].','.$fv['is_delete'].')','style'=>'margin-left: 5px']);?>
+                                    <small class='<?= $fv['is_delete'] == "0" ? "label label-info" : "label label-danger" ?>'><?= $fv['is_delete'] == 0 ? "启用" : "关闭" ?></small>
+                                </td>
+                                <td>
+                                    <?= Html::a('<i class="glyphicon glyphicon-pencil "></i><span>编辑</span>', Url::to(['userpermission/edit', 'id' => $fv['id']]), ['title' => '编辑', 'class' => 'btn btn-info btn-xs', 'style' => 'margin-left: 5px']); ?>
+                                    <?= Html::a('<i class="glyphicon glyphicon-cog"></i><span>状态</span>', "#", ['title' => '关闭', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del(' . $fv['id'] . ',' . $fv['is_delete'] . ')', 'style' => 'margin-left: 5px']); ?>
                                 </td>
                             </tr>
                             <?php
-                            if(!empty($fv['list'])){
-                                foreach ($fv['list'] as $lk=>$lv){
+                            if (!empty($fv['list'])) {
+                                foreach ($fv['list'] as $lk => $lv) {
                                     ?>
                                     <tr>
-                                        <td><?=$lv['id']?></td>
-                                        <td><?=$lv['name']?></td>
+                                        <td><?= $lv['id'] ?></td>
+                                        <td><?= $lv['name'] ?></td>
                                         <td>三级级菜单栏</td>
-                                        <td><?=$fv['name']?></td>
-                                        <td><?=$v['name']?></td>
-                                        <td><?=$lv['page']?></td>
-                                        <td><small class='<?=$lv['is_delete']=="0"?"label label-info":"label label-danger"?>'><?=$lv['is_delete']==0?"启用":"关闭"?></small></td>
+                                        <td><?= $fv['name'] ?></td>
+                                        <td><?= $v['name'] ?></td>
+                                        <td><?= $lv['page'] ?></td>
                                         <td>
-                                            <?=Html::a('<i class="glyphicon glyphicon-pencil "></i><span>编辑</span>', Url::to(['userpermission/edit','id'=>$lv['id']]), ['title' => '编辑', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px']);?>
-                                            <?=Html::a('<i class="glyphicon glyphicon-cog"></i><span>状态</span>', "#", ['title' => '关闭', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del('.$lv['id'].','.$lv['is_delete'].')','style'=>'margin-left: 5px']);?>
+                                            <small class='<?= $lv['is_delete'] == "0" ? "label label-info" : "label label-danger" ?>'><?= $lv['is_delete'] == 0 ? "启用" : "关闭" ?></small>
+                                        </td>
+                                        <td>
+                                            <?= Html::a('<i class="glyphicon glyphicon-pencil "></i><span>编辑</span>', Url::to(['userpermission/edit', 'id' => $lv['id']]), ['title' => '编辑', 'class' => 'btn btn-info btn-xs', 'style' => 'margin-left: 5px']); ?>
+                                            <?= Html::a('<i class="glyphicon glyphicon-cog"></i><span>状态</span>', "#", ['title' => '关闭', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del(' . $lv['id'] . ',' . $lv['is_delete'] . ')', 'style' => 'margin-left: 5px']); ?>
                                         </td>
                                     </tr>
                                     <?php
@@ -179,44 +183,45 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 <script>
-    function del(id,status) {
-        swal({
-                title: "确定要修改状态吗",
-                text: "",
-                type: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "确定修改！",
-                cancelButtonText: "取消修改",
-                closeOnConfirm: false,
-                showLoaderOnConfirm: true,
-            }, function () {
-                $.ajax({
-                    url: "<?=Url::to(['userpermission/delete'])?>",
-                    type: 'post',
-                    data: {'id': id,'status':status},
-                    dataType: 'json',
-                    success: function (data) {
-                        var data1 = eval(data);
-                        if (data1.code == 1) {
-                            swal({
-                                    title: data1.msg,
-                                    type: "success",
-                                    showCancelButton: false,
-                                    confirmButtonColor: "#DD6B55",
-                                    confirmButtonText: "确定",
-                                },
-                                function () {
-                                    history.go(0);
-                                },
-                            );
-                        } else {
-                            swal(data1.msg, "", 'error');
-                        }
-                    },
-                });
-            },
-        )
+    function del(id, status) {
+        swal.fire({
+            title: "确定要修改状态吗",
+            text: "",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "确定修改！",
+            cancelButtonText: "取消修改",
+            closeOnConfirm: false,
+            showLoaderOnConfirm: true,
+        }).then((values) => {
+           if(values.value){
+               $.ajax({
+                   url: "<?=Url::to(['userpermission/delete'])?>",
+                   type: 'post',
+                   data: {'id': id, 'status': status},
+                   dataType: 'json',
+                   success: function (data) {
+                       var data1 = eval(data);
+                       if (data1.code == 1) {
+                           swal.fire({
+                               title: data1.msg,
+                               icon: "success",
+                               showCancelButton: false,
+                               confirmButtonColor: "#DD6B55",
+                               confirmButtonText: "确定",
+                           }).then(function () {
+                               history.go(0);
+                           });
+
+                       } else {
+                           swal.fire(data1.msg, "", 'error');
+                       }
+                   },
+               });
+           }
+        });
+
     };
 
 
@@ -225,39 +230,37 @@ $this->params['breadcrumbs'][] = $this->title;
                 title: "确定修改状态吗",
                 type: "warning",
                 showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
                 confirmButtonText: "确定修改！",
                 cancelButtonText: "取消修改",
-                closeOnConfirm: false,
-                showLoaderOnConfirm: true,
-            }, function () {
-                $.ajax({
-                    url: "<?=Url::to(['userrole/user-status'])?>",
-                    type: 'post',
-                    data: {'id': id, 'status': status},
-                    dataType: 'json',
-                    success: function (data) {
-                        console.log(data);
-                        var data1 = eval(data);
-                        if (data1.code == 1) {
-                            swal({
-                                    title: "修改成功",
-                                    type: "success",
-                                    showCancelButton: false,
-                                    confirmButtonColor: "#DD6B55",
-                                    confirmButtonText: "确定",
-                                },
-                                function () {
-                                    history.go(0);
-                                },
-                            );
-                        } else {
-                            swal('修改失败', "", 'error');
-                        }
-                    },
-                });
-            },
-        )
+            }).then((values)=>{
+                if(values.value){
+                    $.ajax({
+                        url: "<?=Url::to(['userrole/user-status'])?>",
+                        type: 'post',
+                        data: {'id': id, 'status': status},
+                        dataType: 'json',
+                        success: function (data) {
+                            var data1 = eval(data);
+                            if (data1.code == 1) {
+                                swal({
+                                        title: "修改成功",
+                                        type: "success",
+                                        showCancelButton: false,
+                                        confirmButtonColor: "#DD6B55",
+                                        confirmButtonText: "确定",
+                                    },
+                                    function () {
+                                        history.go(0);
+                                    },
+                                );
+                            } else {
+                                swal('修改失败', "", 'error');
+                            }
+                        },
+                    });
+                }
+        })
+
     };
 
     function edit_name(id) {

@@ -1,0 +1,128 @@
+2019-11-19 14:14:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][Error] Error: Class 'common\models\BackLoginForm' not found in /Applications/MAMP/htdocs/web/yii/frontend/controllers/SiteController.php:91
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionLogin()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2019-11-19 14:14:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '59049'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574144085.21
+    'REQUEST_TIME' => 1574144085
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2019-11-20 11:12:31 [::1][-][3dd54a41f2f5c6894043687831fc6514][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "userrole/index". in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('userrole/index', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/web/yii/frontend111/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/web/yii/frontend111/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-11-20 11:12:31 [::1][-][3dd54a41f2f5c6894043687831fc6514][info][application] $_GET = [
+    'r' => 'userrole/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '2bc26c090b778c679ddcb653bc7a266f'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=2bc26c090b778c679ddcb653bc7a266f; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend111/web/index.php'
+    'REMOTE_PORT' => '59873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=userrole%2Findex'
+    'REQUEST_URI' => '/frontend111/web/index.php?r=userrole%2Findex'
+    'SCRIPT_NAME' => '/frontend111/web/index.php'
+    'PHP_SELF' => '/frontend111/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1574219551.14
+    'REQUEST_TIME' => 1574219551
+    'argv' => [
+        0 => 'r=userrole%2Findex'
+    ]
+    'argc' => 1
+]

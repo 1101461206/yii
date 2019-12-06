@@ -769,7 +769,7 @@ php: |
      'comments' => "Late afternoon is best. Backup contact is Nancy Billsmer @ 338-4338.\n"
   ]
 ---
-test: LogForm file
+test: Log file
 todo: true
 spec: 2.28
 yaml: |

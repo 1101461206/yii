@@ -1,0 +1,447 @@
+2019-12-05 09:47:54 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: imsnews/create in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsnews/create', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2019-12-05 09:47:54 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/imsnews'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '58469'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsnews/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsnews/create'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsnews/create'
+    'PHP_SELF' => '/backend/web/index.php/imsnews/create'
+    'REQUEST_TIME_FLOAT' => 1575510474.72
+    'REQUEST_TIME' => 1575510474
+    'argv' => []
+    'argc' => 0
+]
+2019-12-05 09:48:54 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: imsnews/addd in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('addd', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsnews/addd', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2019-12-05 09:48:54 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/imsnews'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '58478'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsnews/addd'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsnews/addd'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsnews/addd'
+    'PHP_SELF' => '/backend/web/index.php/imsnews/addd'
+    'REQUEST_TIME_FLOAT' => 1575510534.21
+    'REQUEST_TIME' => 1575510534
+    'argv' => []
+    'argc' => 0
+]
+2019-12-05 09:53:45 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][Error] Error: Call to undefined method Yii::app() in /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsnewsController.php:45
+Stack trace:
+#0 [internal function]: backend\controllers\ImsnewsController->actionIndex()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsnews', Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#7 {main}
+2019-12-05 09:53:45 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '58623'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsnews'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsnews'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsnews'
+    'PHP_SELF' => '/backend/web/index.php/imsnews'
+    'REQUEST_TIME_FLOAT' => 1575510825.64
+    'REQUEST_TIME' => 1575510825
+    'argv' => []
+    'argc' => 0
+]
+2019-12-05 09:53:55 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][Error] Error: Call to undefined method Yii::app() in /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsnewsController.php:44
+Stack trace:
+#0 [internal function]: backend\controllers\ImsnewsController->actionIndex()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsnews', Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#7 {main}
+2019-12-05 09:53:55 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '58631'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsnews'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsnews'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsnews'
+    'PHP_SELF' => '/backend/web/index.php/imsnews'
+    'REQUEST_TIME_FLOAT' => 1575510835.3
+    'REQUEST_TIME' => 1575510835
+    'argv' => []
+    'argc' => 0
+]
+2019-12-05 09:54:04 [::1][53][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsnewsController.php on line 44. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2019-12-05 09:54:04 [::1][53][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '58633'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsnews'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsnews'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsnews'
+    'PHP_SELF' => '/backend/web/index.php/imsnews'
+    'REQUEST_TIME_FLOAT' => 1575510844.51
+    'REQUEST_TIME' => 1575510844
+    'argv' => []
+    'argc' => 0
+]
+2019-12-05 09:54:44 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::baseUrl in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/ServiceLocator.php(77): yii\base\Component->__get('baseUrl')
+#1 /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsnewsController.php(44): yii\di\ServiceLocator->__get('baseUrl')
+#2 [internal function]: backend\controllers\ImsnewsController->actionIndex()
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsnews', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-05 09:54:44 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '58635'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsnews'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsnews'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsnews'
+    'PHP_SELF' => '/backend/web/index.php/imsnews'
+    'REQUEST_TIME_FLOAT' => 1575510884.04
+    'REQUEST_TIME' => 1575510884
+    'argv' => []
+    'argc' => 0
+]
+2019-12-05 09:54:54 [::1][53][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsnewsController.php on line 44. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2019-12-05 09:54:54 [::1][53][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '58638'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsnews'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsnews'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsnews'
+    'PHP_SELF' => '/backend/web/index.php/imsnews'
+    'REQUEST_TIME_FLOAT' => 1575510894.47
+    'REQUEST_TIME' => 1575510894
+    'argv' => []
+    'argc' => 0
+]

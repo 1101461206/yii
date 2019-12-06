@@ -1,0 +1,22 @@
+{
+  "name": "yii",
+  "version": "1.0.0",
+  "description": "this is a project file",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1101461206/yii.git"
+  },
+  "author": "zzl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1101461206/yii/issues"
+  },
+  "homepage": "https://github.com/1101461206/yii#readme",
+  "dependencies": {
+    "sweetalert2": "^9.4.0"
+  }
+}

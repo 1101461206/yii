@@ -1,0 +1,3200 @@
+2019-11-19 14:14:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][Error] Error: Class 'common\models\BackLoginForm' not found in /Applications/MAMP/htdocs/web/yii/frontend/controllers/SiteController.php:91
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionLogin()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2019-11-19 14:14:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '59049'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574144085.21
+    'REQUEST_TIME' => 1574144085
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2019-11-20 10:45:50 [::1][-][-][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\IndexController->actionIndex()
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2019-11-20 10:45:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '9873759b087ec73453cebbd606aed5efc60134079523e6534a9fa2c9af5029a5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1l_JiywYHXklg5QJrwzq5nn0geht2WwN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf-frontend=9873759b087ec73453cebbd606aed5efc60134079523e6534a9fa2c9af5029a5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221l_JiywYHXklg5QJrwzq5nn0geht2WwN%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574217950.29
+    'REQUEST_TIME' => 1574217950
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 11:03:01 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\NavBar::openid in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('openid', 'container clear...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\NavBar), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(89): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(62): yii\base\Widget::begin(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 11:03:01 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '57429'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574218981.75
+    'REQUEST_TIME' => 1574218981
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-11-20 11:03:17 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\NavBar::openid in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('openid', 'container clear...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\NavBar), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(89): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(62): yii\base\Widget::begin(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 11:03:17 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '57491'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574218997.33
+    'REQUEST_TIME' => 1574218997
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-11-20 11:03:18 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\NavBar::openid in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('openid', 'container clear...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\NavBar), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(89): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(62): yii\base\Widget::begin(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 11:03:18 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '57492'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574218998.42
+    'REQUEST_TIME' => 1574218998
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-11-20 11:52:42 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The 'label' option is required. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php:170
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#3 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#8 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#9 [internal function]: frontend\controllers\IndexController->actionIndex()
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2019-11-20 11:52:42 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53731'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574221962.33
+    'REQUEST_TIME' => 1574221962
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 13:23:56 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The 'label' option is required. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php:113
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php(91): yii\bootstrap\Dropdown->renderItems(Array, Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Dropdown->run()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(224): yii\base\Widget::widget(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(196): yii\bootstrap\Nav->renderDropdown(Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 13:23:56 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '62290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574227436.5
+    'REQUEST_TIME' => 1574227436
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 13:26:19 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The 'label' option is required. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php:113
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php(91): yii\bootstrap\Dropdown->renderItems(Array, Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Dropdown->run()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(224): yii\base\Widget::widget(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(196): yii\bootstrap\Nav->renderDropdown(Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 13:26:19 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '62897'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574227579.41
+    'REQUEST_TIME' => 1574227579
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 13:28:46 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The 'label' option is required. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php:113
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php(91): yii\bootstrap\Dropdown->renderItems(Array, Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Dropdown->run()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(224): yii\base\Widget::widget(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(196): yii\bootstrap\Nav->renderDropdown(Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 13:28:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '63496'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574227725.97
+    'REQUEST_TIME' => 1574227725
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 13:28:52 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The 'label' option is required. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php:113
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Dropdown.php(91): yii\bootstrap\Dropdown->renderItems(Array, Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Dropdown->run()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(224): yii\base\Widget::widget(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(196): yii\bootstrap\Nav->renderDropdown(Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 13:28:52 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '63527'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574227732.54
+    'REQUEST_TIME' => 1574227732
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 13:46:43 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\Nav::submenuTemplate in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('submenuTemplate', '<ul class='drop...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 13:46:43 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '51770'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574228803.21
+    'REQUEST_TIME' => 1574228803
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 13:49:42 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\Nav::submenuTemplate in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('submenuTemplate', '<ul class='drop...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 13:49:41 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52504'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574228981.92
+    'REQUEST_TIME' => 1574228981
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 14:04:13 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][Error] Error: Class 'dropdown' not found in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php:219
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(196): yii\bootstrap\Nav->renderDropdown(Array, Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#4 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#9 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#10 [internal function]: frontend\controllers\IndexController->actionIndex()
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2019-11-20 14:04:13 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '56240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574229853.61
+    'REQUEST_TIME' => 1574229853
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 14:04:34 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][Error] Error: Class 'dropdown' not found in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php:219
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(196): yii\bootstrap\Nav->renderDropdown(Array, Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#4 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#9 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#10 [internal function]: frontend\controllers\IndexController->actionIndex()
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2019-11-20 14:04:34 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '56326'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574229874.18
+    'REQUEST_TIME' => 1574229874
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 14:06:43 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\Nav::submenuOptions in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('submenuOptions', 'dropdown')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(88): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 14:06:43 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '56870'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574230003.61
+    'REQUEST_TIME' => 1574230003
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 14:49:07 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\Nav::0 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('0', '')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(91): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 14:49:07 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '51098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574232547.87
+    'REQUEST_TIME' => 1574232547
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 14:53:02 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\Nav::submenuOptions in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('submenuOptions', '')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(91): yii\base\Widget::widget(Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#12 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\IndexController->actionIndex()
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#17 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#18 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#20 {main}
+2019-11-20 14:53:02 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52088'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574232782.18
+    'REQUEST_TIME' => 1574232782
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-20 15:11:02 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][Error] Error: Class 'yii\bootstrap\Qian_Dropdown' not found in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php:217
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(194): yii\bootstrap\Nav->renderDropdown(Array, Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(152): yii\bootstrap\Nav->renderItem(Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2-bootstrap/src/Nav.php(139): yii\bootstrap\Nav->renderItems()
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Widget.php(140): yii\bootstrap\Nav->run()
+#4 /Applications/MAMP/htdocs/web/yii/frontend/views/layouts/main.php(89): yii\base\Widget::widget(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<section id="in...')
+#9 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(9): yii\base\Controller->render('index')
+#10 [internal function]: frontend\controllers\IndexController->actionIndex()
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index/index', Array)
+#15 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2019-11-20 15:11:02 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gdbopa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2/index.php?r=index%2Findex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '56674'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1574233862.22
+    'REQUEST_TIME' => 1574233862
+    'argv' => [
+        0 => 'r=index%2Findex'
+    ]
+    'argc' => 1
+]
+2019-11-29 16:59:52 [::1][-][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php on line 14. in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2019-11-29 16:59:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '56419'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575017992.25
+    'REQUEST_TIME' => 1575017992
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-11-29 17:17:41 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '=' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:77
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(15): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-11-29 17:17:41 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '56581'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575019061.68
+    'REQUEST_TIME' => 1575019061
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 11:14:21 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\ImsIndex::gongzhenghao in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('gongzhenghao')
+#1 /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php(17): yii\db\BaseActiveRecord->__get('gongzhenghao')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#6 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(18): yii\base\Controller->render('index', Array)
+#7 [internal function]: frontend\controllers\IndexController->actionIndex()
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+2019-12-02 11:14:21 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '50584'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575256461.78
+    'REQUEST_TIME' => 1575256461
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 11:14:23 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\ImsIndex::gongzhenghao in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('gongzhenghao')
+#1 /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php(17): yii\db\BaseActiveRecord->__get('gongzhenghao')
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#6 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(18): yii\base\Controller->render('index', Array)
+#7 [internal function]: frontend\controllers\IndexController->actionIndex()
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#11 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#12 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+2019-12-02 11:14:23 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '50585'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575256463.21
+    'REQUEST_TIME' => 1575256463
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 11:18:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '?>' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:17
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(18): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 11:18:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '50604'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575256725.24
+    'REQUEST_TIME' => 1575256725
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 15:57:23 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}', expecting ',' or ';' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:20
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 15:57:23 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273443.55
+    'REQUEST_TIME' => 1575273443
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 15:57:40 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}', expecting ',' or ';' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:20
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 15:57:40 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273460.18
+    'REQUEST_TIME' => 1575273460
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 15:57:58 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:38
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 15:57:58 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52822'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273478.64
+    'REQUEST_TIME' => 1575273478
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 15:58:58 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:38
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 15:58:58 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273538.71
+    'REQUEST_TIME' => 1575273538
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 15:59:00 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:38
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 15:59:00 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52827'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273540.15
+    'REQUEST_TIME' => 1575273540
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 15:59:17 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:38
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 15:59:17 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52829'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273557.55
+    'REQUEST_TIME' => 1575273557
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 15:59:18 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:38
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 15:59:18 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52830'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273558.41
+    'REQUEST_TIME' => 1575273558
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:00:19 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:19
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:00:19 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273619.03
+    'REQUEST_TIME' => 1575273619
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:00:32 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:32
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:00:31 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273631.91
+    'REQUEST_TIME' => 1575273631
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:01:03 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:17
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:01:03 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52842'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273663.43
+    'REQUEST_TIME' => 1575273663
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:01:20 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:32
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:01:20 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52844'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273680.19
+    'REQUEST_TIME' => 1575273680
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:01:55 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:32
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:01:55 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52847'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273715.59
+    'REQUEST_TIME' => 1575273715
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:22 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:32
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:22 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52852'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273742.09
+    'REQUEST_TIME' => 1575273742
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:44 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:28
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:44 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52854'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273764.43
+    'REQUEST_TIME' => 1575273764
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:28
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:45 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52855'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273765.67
+    'REQUEST_TIME' => 1575273765
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:52 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:52 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52857'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273772.47
+    'REQUEST_TIME' => 1575273772
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:53 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:53 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52858'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273773.42
+    'REQUEST_TIME' => 1575273773
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:53 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:53 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273773.84
+    'REQUEST_TIME' => 1575273773
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:54 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:54 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52860'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273774.2
+    'REQUEST_TIME' => 1575273774
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:02:54 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:02:54 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52861'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273774.56
+    'REQUEST_TIME' => 1575273774
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:03:18 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '}' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:03:18 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273798.1
+    'REQUEST_TIME' => 1575273798
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:03:57 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected '<' in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:14
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(22): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:03:57 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52882'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575273837.22
+    'REQUEST_TIME' => 1575273837
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]
+2019-12-02 16:08:24 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][error][ParseError] ParseError: syntax error, unexpected 'active' (T_STRING) in /Applications/MAMP/htdocs/web/yii/frontend/views/index/index.php:19
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\IndexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\IndexController))
+#3 /Applications/MAMP/htdocs/web/yii/frontend/controllers/IndexController.php(23): yii\base\Controller->render('index', Array)
+#4 [internal function]: frontend\controllers\IndexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2019-12-02 16:08:24 [::1][-][61d5a9ed4d6463a49a6aa57c4b006e74][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '61d5a9ed4d6463a49a6aa57c4b006e74'
+    '_csrf-frontend' => '4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii2'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=61d5a9ed4d6463a49a6aa57c4b006e74; _csrf-frontend=4ca525d90fdd51f797405574b4742ab8f746ff0bd419aa837af268f6e1c6c27aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22b--fJGEMzawW2D_g6OgAmgx5HEBPt6Zm%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii2'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52949'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/index.php?r=index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1575274104.28
+    'REQUEST_TIME' => 1575274104
+    'argv' => [
+        0 => 'r=index'
+    ]
+    'argc' => 1
+]

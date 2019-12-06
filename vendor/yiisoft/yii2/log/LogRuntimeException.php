@@ -20,6 +20,6 @@ class LogRuntimeException extends \yii\base\Exception
      */
     public function getName()
     {
-        return 'LogForm Runtime';
+        return 'Log Runtime';
     }
 }

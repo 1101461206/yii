@@ -42,7 +42,6 @@ class UserBackendSerach extends UserBackend
         $query = UserBackend::find();
 
         // add conditions that should always apply here
-
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [
@@ -54,6 +53,7 @@ class UserBackendSerach extends UserBackend
                 ],
             ],
         ]);
+
 
         $this->load($params);
 

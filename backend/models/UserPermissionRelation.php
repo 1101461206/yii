@@ -130,6 +130,7 @@ class UserPermissionRelation extends \yii\db\ActiveRecord
             ->from('user_permission_relation r')
             ->leftJoin('user_permission p','p.permission_id=r.permission_id')
             ->where(['role_id' => $id])
+            ->orderBy(['p.aort'=>'SORT_ASC'])
             ->asArray()
             ->all();
         $menu=array();

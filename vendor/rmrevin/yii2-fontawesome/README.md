@@ -23,11 +23,6 @@ Support
 * [GutHub issues](https://github.com/rmrevin/yii2-fontawesome/issues)
 * [Public chat](https://gitter.im/rmrevin/support)
 
-Update to `2.17`
-----------------
-
-Be careful in version 2.17 deprecated methods were removed. More in the [changelog](https://github.com/rmrevin/yii2-fontawesome/blob/master/CHANGELOG.md).
-
 Installation
 ------------
 
@@ -36,13 +31,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```bash
-composer require "rmrevin/yii2-fontawesome:~2.17"
+composer require "rmrevin/yii2-fontawesome:~2.12"
 ```
 
 or add
 
 ```
-"rmrevin/yii2-fontawesome": "~2.17",
+"rmrevin/yii2-fontawesome": "~2.12",
 ```
 
 to the `require` section of your `composer.json` file.
@@ -66,7 +61,7 @@ class AppAsset extends AssetBundle
 
 	public $depends = [
 		// ...
-		'rmrevin\yii\fontawesome\AssetBundle'
+		'\rmrevin\yii\fontawesome\AssetBundle'
 	];
 }
 
@@ -88,8 +83,8 @@ Namespace: `rmrevin\yii\fontawesome`;
 ###Class `component\Icon` (`$Icon`)
 
 * `(string)$Icon` - render icon
-* `$Icon->render()` - DEPRECATED! render icon
-* `$Icon->tag($value)` - DEPRECATED! set another html tag for icon (default `i`)
+* `$Icon->render()` - render icon
+* `$Icon->tag($value)` - set another html tag for icon (default `i`)
   * `$value` - name of tag
 * `$Icon->addCssClass($value)` - add to html tag css class in `$value`
   * `$value` - name of css class
@@ -111,8 +106,8 @@ Namespace: `rmrevin\yii\fontawesome`;
 ###Class `component\Stack` (`$Stack`)
 
 * `(string)$Stack` - render icon stack
-* `$Stack->render()` - DEPRECATED! render icon stack
-* `$Stack->tag($value)` - DEPRECATED! set another html tag for icon stack (default `span`)
+* `$Stack->render()` - render icon stack
+* `$Stack->tag($value)` - set another html tag for icon stack (default `span`)
 * `$Stack->icon($icon, $options=[])` - set icon for stack
   * `$icon` - name of icon or `component\Icon` object
   * `$options` - additional attributes for icon html tag.
@@ -147,6 +142,7 @@ echo Html::submitButton(
 echo FA::icon('cog')->inverse();    // <i class="fa fa-cog fa-inverse"></i>
 echo FA::icon('cog')->spin();       // <i class="fa fa-cog fa-spin"></i>
 echo FA::icon('cog')->fixedWidth(); // <i class="fa fa-cog fa-fw"></i>
+echo FA::icon('cog')->ul();         // <i class="fa fa-cog fa-ul"></i>
 echo FA::icon('cog')->li();         // <i class="fa fa-cog fa-li"></i>
 echo FA::icon('cog')->border();     // <i class="fa fa-cog fa-border"></i>
 echo FA::icon('cog')->pullLeft();   // <i class="fa fa-cog pull-left"></i>
@@ -191,15 +187,6 @@ echo FA::stack(['data-role' => 'stacked-icon'])
 // <span class="fa-stack" data-role="stacked-icon">
 //   <i class="fa fa-square-o fa-inverse fa-stack-2x"></i>
 //   <i class="fa fa-cog fa-spin fa-stack-1x"></i>
-// </span>
-
-// unordered list icons 
-echo FA::ul(['data-role' => 'unordered-list'])
-     ->item('Bullet item', ['icon' => 'circle'])
-     ->item('Checked item', ['icon' => 'check']);
-// <ul class="fa-ul" data-role="unordered-list">
-//   <li><i class="fa fa-circle fa-li"></i>Bullet item</li>
-//   <li><i class="fa fa-check fa-li"></i>Checked Item</li>
 // </span>
 
 // autocomplete icons name in IDE

@@ -1,0 +1,499 @@
+2019-11-27 14:15:34 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][ParseError] ParseError: syntax error, unexpected '?>' in /Applications/MAMP/htdocs/web/yii/backend/views/imsindex/index.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ImsindexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ImsindexController))
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsindexController.php(48): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ImsindexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2019-11-27 14:15:34 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = [
+    'r' => 'imsindex'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '60903'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imsindex'
+    'REQUEST_URI' => '/backend/web/index.php?r=imsindex'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1574835334.49
+    'REQUEST_TIME' => 1574835334
+    'argv' => [
+        0 => 'r=imsindex'
+    ]
+    'argc' => 1
+]
+2019-11-27 14:16:35 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][ParseError] ParseError: syntax error, unexpected '?>' in /Applications/MAMP/htdocs/web/yii/backend/views/imsindex/index.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ImsindexController))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ImsindexController))
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsindexController.php(48): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ImsindexController->actionIndex()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2019-11-27 14:16:35 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = [
+    'r' => 'imsindex'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '61146'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imsindex'
+    'REQUEST_URI' => '/backend/web/index.php?r=imsindex'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1574835395.36
+    'REQUEST_TIME' => 1574835395
+    'argv' => [
+        0 => 'r=imsindex'
+    ]
+    'argc' => 1
+]
+2019-11-27 17:00:40 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: backend\models\ImsIndex::signup() in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsindexController.php(51): yii\base\Component->__call('signup', Array)
+#1 [internal function]: backend\controllers\ImsindexController->actionIndex()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2019-11-27 17:00:40 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = [
+    'r' => 'imsindex'
+]
+
+$_POST = [
+    '_csrf-backend' => 'MpZpcOmLgIhRU3422RGRyuZBhVWN65NZtFaG96k-w-sB4StJpMP24RkJR1q0edChiHTOG9eo4wyMD7GD41KEmw=='
+    'ImsIndex' => [
+        'title' => '1'
+        'banner' => ''
+        'banner_text_top' => '2'
+        'banner_text_down' => '3'
+    ]
+]
+
+$_FILES = [
+    'ImsIndex' => [
+        'name' => [
+            'banner' => 'timg.jpg'
+        ]
+        'type' => [
+            'banner' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'banner' => '/Applications/MAMP/tmp/php/phpBwLR0o'
+        ]
+        'error' => [
+            'banner' => 0
+        ]
+        'size' => [
+            'banner' => 247438
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------15768443682075088996886328492'
+    'CONTENT_LENGTH' => '248379'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=imsindex'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '60185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imsindex'
+    'REQUEST_URI' => '/backend/web/index.php?r=imsindex'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1574845240.89
+    'REQUEST_TIME' => 1574845240
+    'argv' => [
+        0 => 'r=imsindex'
+    ]
+    'argc' => 1
+]
+2019-11-27 17:01:04 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\ImsIndex::username in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('username')
+#1 /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsindexController.php(52): yii\db\BaseActiveRecord->__get('username')
+#2 [internal function]: backend\controllers\ImsindexController->actionIndex()
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-11-27 17:01:04 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = [
+    'r' => 'imsindex'
+]
+
+$_POST = [
+    '_csrf-backend' => 'MpZpcOmLgIhRU3422RGRyuZBhVWN65NZtFaG96k-w-sB4StJpMP24RkJR1q0edChiHTOG9eo4wyMD7GD41KEmw=='
+    'ImsIndex' => [
+        'title' => '1'
+        'banner' => ''
+        'banner_text_top' => '2'
+        'banner_text_down' => '3'
+    ]
+]
+
+$_FILES = [
+    'ImsIndex' => [
+        'name' => [
+            'banner' => 'timg.jpg'
+        ]
+        'type' => [
+            'banner' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'banner' => '/Applications/MAMP/tmp/php/php1F6kFO'
+        ]
+        'error' => [
+            'banner' => 0
+        ]
+        'size' => [
+            'banner' => 247438
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=imsindex'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------15768443682075088996886328492'
+    'CONTENT_LENGTH' => '248379'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '60187'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imsindex'
+    'REQUEST_URI' => '/backend/web/index.php?r=imsindex'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1574845264.49
+    'REQUEST_TIME' => 1574845264
+    'argv' => [
+        0 => 'r=imsindex'
+    ]
+    'argc' => 1
+]
+2019-11-27 17:10:04 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\ImsIndex::username in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('username')
+#1 /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsindexController.php(53): yii\db\BaseActiveRecord->__get('username')
+#2 [internal function]: backend\controllers\ImsindexController->actionIndex()
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-11-27 17:10:04 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = [
+    'r' => 'imsindex'
+]
+
+$_POST = [
+    '_csrf-backend' => 'in-kSTouU9JU5ImYnluDWSPip1_M5153t5cHoX19kL25COZwd2Yluxy-sPTzM8IyTdfsEZakLiKPzjDVNxHXzQ=='
+    'ImsIndex' => [
+        'title' => '2'
+        'banner' => ''
+        'banner_text_top' => '3'
+        'banner_text_down' => '5'
+    ]
+]
+
+$_FILES = [
+    'ImsIndex' => [
+        'name' => [
+            'banner' => ''
+        ]
+        'type' => [
+            'banner' => ''
+        ]
+        'tmp_name' => [
+            'banner' => ''
+        ]
+        'error' => [
+            'banner' => 4
+        ]
+        'size' => [
+            'banner' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------15763894528717667251649907241'
+    'CONTENT_LENGTH' => '947'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=imsindex'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '60256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imsindex'
+    'REQUEST_URI' => '/backend/web/index.php?r=imsindex'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1574845804.55
+    'REQUEST_TIME' => 1574845804
+    'argv' => [
+        0 => 'r=imsindex'
+    ]
+    'argc' => 1
+]
+2019-11-27 17:17:56 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: The requested page does not exist. in /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsindexController.php:175
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/backend/controllers/ImsindexController.php(46): backend\controllers\ImsindexController->findModel(NULL)
+#1 [internal function]: backend\controllers\ImsindexController->actionIndex()
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex/index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2019-11-27 17:17:56 [::1][53][32fa3ea2de4c91a28c2cb89e99b92d9e][info][application] $_GET = [
+    'r' => 'imsindex/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => '5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE\",2592000]\";}'
+    'advanced-backend' => '32fa3ea2de4c91a28c2cb89e99b92d9e'
+    '_csrf-backend' => 'a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp\";}'
+    'advanced-frontend' => '3dd54a41f2f5c6894043687831fc6514'
+    '_csrf-frontend' => 'bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=imsindex'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=5ebadecdf237960060827e974e204a6ae8d9a02278d34dc18556d0bf80a8cc69a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22JwTtz4-xTKvuK8sTqiVIk_chQQA16FaE%22%2C2592000%5D%22%3B%7D; advanced-backend=32fa3ea2de4c91a28c2cb89e99b92d9e; _csrf-backend=a90bf170ce5bf6399912d6415df615ba3a36579c7a5bd2e1c8a8264368912998a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223wB9MHviHZ9lmhAkn5KNZCpU8Y7tJlGp%22%3B%7D; advanced-frontend=3dd54a41f2f5c6894043687831fc6514; _csrf-frontend=bbdec0b927d44974bbabea269de9c136c7fcbc0ee3cae25969395571fccf956da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TK3jKxvX_YXArxNlXP7icNpCn1-2rU1u%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '60312'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imsindex%2Findex'
+    'REQUEST_URI' => '/backend/web/index.php?r=imsindex%2Findex'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1574846276.14
+    'REQUEST_TIME' => 1574846276
+    'argv' => [
+        0 => 'r=imsindex%2Findex'
+    ]
+    'argc' => 1
+]

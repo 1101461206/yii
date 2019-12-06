@@ -20,6 +20,14 @@ return [
     'language'=>"zh-CN",
     //时区
     'timeZone'=>'Asia/beijing',
+    'modules'=>[
+        'redactor' => [
+            'class' => 'common\components\RedactorModule',
+            'uploadDir' => '@frontendupload/',       // 比如这里可以填写 ./uploads
+            'uploadUrl' => '/frontend/web/upload/',  // 编辑器里展示的地址
+            'imageAllowExtensions'=>['jpg','png','gif'],
+        ],
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -73,14 +81,15 @@ return [
               ],
           ],
         ],
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'showScriptName' => true,
+          //  'suffix' => '.html',
             'rules' => [
             ],
         ],
-        */
+
 
         /**
          * 自定义组件

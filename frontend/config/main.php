@@ -10,7 +10,12 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'name'=>'爱风尚',
     'controllerNamespace' => 'frontend\controllers',
+    //语言
+    'language'=>"zh-CN",
+    //时区
+    'timeZone'=>'Asia/beijing',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',

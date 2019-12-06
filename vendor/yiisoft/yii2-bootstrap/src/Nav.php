@@ -175,13 +175,11 @@ class Nav extends Widget
         $items = ArrayHelper::getValue($item, 'items');
         $url = ArrayHelper::getValue($item, 'url', '#');
         $linkOptions = ArrayHelper::getValue($item, 'linkOptions', []);
-
         if (isset($item['active'])) {
             $active = ArrayHelper::remove($item, 'active', false);
         } else {
             $active = $this->isItemActive($item);
         }
-
         if (empty($items)) {
             $items = '';
         } else {

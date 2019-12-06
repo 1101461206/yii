@@ -443,14 +443,11 @@ class User extends Component
             && (!$checkAjax || !$request->getIsAjax())
             && $canRedirect
         ) {
-            $this->setReturnUrl($request->getUrl());
+            $this->setReturnUrl($request->getAbsoluteUrl());
         }
-
         if ($this->loginUrl !== null && $canRedirect) {
             $loginUrl = (array) $this->loginUrl;
-
             if ($loginUrl[0] !== Yii::$app->requestedRoute) {
-                var_dump($this->loginUrl);
                 return Yii::$app->getResponse()->redirect($this->loginUrl);
             }
         }

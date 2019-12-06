@@ -37,15 +37,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['attribute' => 'roleid', 'headerOptions' => ['width' => '5%']],
             ['attribute' => 'role_name', 'headerOptions' => ['width' => '20%']],
-            ['attribute' => 'created', 'headerOptions' => ['width' => '20%'],'value'=>function($model){
-               return date("Y-m-d H:i:s",$model->created);
+            ['attribute' => 'created', 'headerOptions' => ['width' => '20%'], 'value' => function ($model) {
+                return date("Y-m-d H:i:s", $model->created);
             }
             ],
-            ['attribute' => 'is_delete', 'headerOptions' => ['width' => '15%'],'format' => 'html','value'=>function($model){
-                $status=$model->is_delete==0?"开启":"关闭";
-                $class=$model->is_delete==0?"label label-info":"label label-danger";
+            ['attribute' => 'is_delete', 'headerOptions' => ['width' => '15%'], 'format' => 'html', 'value' => function ($model) {
+                $status = $model->is_delete == 0 ? "开启" : "关闭";
+                $class = $model->is_delete == 0 ? "label label-info" : "label label-danger";
 
-                return "<small class='$class'>".$status."</small>";
+                return "<small class='$class'>" . $status . "</small>";
 
             }],
             [
@@ -54,21 +54,21 @@ $this->params['breadcrumbs'][] = $this->title;
                 'template' => '{edit}{delete}{resetpass}{role}{status}',
                 'buttons' => [
                     'edit' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-edit"></i><span>编辑</span>', "#", ['title' => '编辑', 'class' => 'btn btn-info btn-xs','onclick'=>'edit_name('. $key .')','style'=>'margin-left: 5px']);
+                        return Html::a('<i class="glyphicon glyphicon-edit"></i><span>编辑</span>', "#", ['title' => '编辑', 'class' => 'btn btn-info btn-xs', 'onclick' => 'edit_name(' . $key . ')', 'style' => 'margin-left: 5px']);
 //                        return Html::a('<i class="glyphicon glyphicon-edit"></i>', $url, ['title' => '编辑', 'class' => 'col-xs-1 col-sm-1']);
                     },
                     'delete' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-trash"></i><span>删除</span>', "#", ['title' => '删除', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del(' . $key . ')','style'=>'margin-left: 5px']);
+                        return Html::a('<i class="glyphicon glyphicon-trash"></i><span>删除</span>', "#", ['title' => '删除', 'class' => 'btn btn-info btn-xs', 'onclick' => 'del(' . $key . ')', 'style' => 'margin-left: 5px']);
                     },
                     'role' => function ($url, $model, $key) {
-                        return Html::a('<i class="glyphicon glyphicon-lock"></i><span>权限</span>', $url, ['title' => '权限', 'class' => 'btn btn-info btn-xs ','style'=>'margin-left: 5px']);
+                        return Html::a('<i class="glyphicon glyphicon-lock"></i><span>权限</span>', $url, ['title' => '权限', 'class' => 'btn btn-info btn-xs ', 'style' => 'margin-left: 5px']);
                     },
-                    'status'=>function($url,$model,$key){
-                        if($model->is_delete==0){
-                            return Html::button('<i class="glyphicon glyphicon-remove"></i><span>关闭</span>', ['title' => '修改状态', 'class' => 'btn btn-info btn-xs ','style'=>'margin-left: 5px','onclick'=>'status('.$key.','.$model->is_delete.')']);
+                    'status' => function ($url, $model, $key) {
+                        if ($model->is_delete == 0) {
+                            return Html::button('<i class="glyphicon glyphicon-remove"></i><span>关闭</span>', ['title' => '修改状态', 'class' => 'btn btn-info btn-xs ', 'style' => 'margin-left: 5px', 'onclick' => 'status(' . $key . ',' . $model->is_delete . ')']);
 
-                        }else{
-                            return Html::button('<i class="glyphicon glyphicon-ok"></i><span>开启</span>', ['title' => '修改状态', 'class' => 'btn btn-info btn-xs','style'=>'margin-left: 5px','onclick'=>'status('.$key.','.$model->is_delete.')']);
+                        } else {
+                            return Html::button('<i class="glyphicon glyphicon-ok"></i><span>开启</span>', ['title' => '修改状态', 'class' => 'btn btn-info btn-xs', 'style' => 'margin-left: 5px', 'onclick' => 'status(' . $key . ',' . $model->is_delete . ')']);
                         }
 
                     }
@@ -81,126 +81,133 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 <script>
     function del(id) {
-        swal({
-                title: "确定要删除该用户吗",
-                text: "删除后将无法恢复",
-                type: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "确定删除！",
-                cancelButtonText: "取消删除",
-                closeOnConfirm: false,
-                showLoaderOnConfirm: true,
-            }, function () {
+        swal.fire({
+            title: "确定要删除该角色吗",
+            text: "删除后将无法恢复",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "确定删除！",
+            cancelButtonText: "取消删除",
+            closeOnConfirm: false,
+            showLoaderOnConfirm: true,
+        }).then((value) => {
+            if (value.value) {
                 $.ajax({
                     url: "<?=Url::to(['userrole/delete'])?>",
                     type: 'post',
                     data: {'id': id},
                     dataType: 'json',
                     success: function (data) {
-                        var data1 =eval(data);
+                        var data1 = eval(data);
                         if (data1.code == 1) {
-                            swal({
-                                    title: "删除成功",
-                                    type: "success",
-                                    showCancelButton: false,
-                                    confirmButtonColor: "#DD6B55",
-                                    confirmButtonText: "确定删除！",
-                                },
-                                function () {
-                                    history.go(0);
-                                },
-                            );
-                        }else{
-                            swal(data1.msg,"",'error');
+                            swal.fire({
+                                title: "删除成功",
+                                icon: "success",
+                                showCancelButton: false,
+                                confirmButtonColor: "#DD6B55",
+                                confirmButtonText: "确定删除！",
+                            }).then((value) => {
+                                history.go(0);
+                            })
+
+
+                        } else {
+                            swal.fire(data1.msg, "", 'error');
                         }
                     },
                 });
-            },
-        )
+            }
+
+        })
     };
 
 
-    function status(id,status) {
-        swal({
-                title: "确定修改状态吗",
-                type: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "确定修改！",
-                cancelButtonText: "取消修改",
-                closeOnConfirm: false,
-                showLoaderOnConfirm: true,
-            }, function () {
+    function status(id, status) {
+        swal.fire({
+            title: "确定修改状态吗",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "确定修改！",
+            cancelButtonText: "取消修改",
+            closeOnConfirm: false,
+            showLoaderOnConfirm: true,
+        }).then((values) => {
+            if(values.value){
                 $.ajax({
                     url: "<?=Url::to(['userrole/user-status'])?>",
                     type: 'post',
-                    data: {'id': id,'status':status},
+                    data: {'id': id, 'status': status},
                     dataType: 'json',
-                    success: function (data){
+                    success: function (data) {
                         console.log(data);
-                        var data1 =eval(data);
+                        var data1 = eval(data);
                         if (data1.code == 1) {
-                            swal({
-                                    title: "修改成功",
-                                    type: "success",
-                                    showCancelButton: false,
-                                    confirmButtonColor: "#DD6B55",
-                                    confirmButtonText: "确定",
-                                },
-                                function () {
-                                    history.go(0);
-                                },
-                            );
-                        }else{
-                            swal('修改失败',"",'error');
-                        }
-                    },
-                });
-            },
-        )
-    };
-
-    function edit_name(id) {
-        swal({
-            title:'输入名称',
-            type:'input',
-            showCancelButton:true,
-            closeOnConfirm:false,
-            confirmButtonText:'修改',
-            cancelButtonText:'取消',
-            animation:'slide-from-top',
-        },function (inputValue) {
-                // if(inputValue==false) return false;
-                if(inputValue==''){
-                    swal.showInputError('名称不能为空');
-                    return false;
-                }
-                $.ajax({
-                    url:"<?=Url::to(['userrole/edit-name'])?>",
-                    type:'post',
-                    data:{'id':id,'name':inputValue},
-                    dataType:'json',
-                    success:function(data){
-                        $data1=eval(data);
-                        if($data1.code == 1){
-                            swal({
+                            swal.fire({
                                 title: "修改成功",
-                                type: "success",
+                                icon: "success",
                                 showCancelButton: false,
                                 confirmButtonColor: "#DD6B55",
                                 confirmButtonText: "确定",
-
-                            },function () {
+                            }).then((value) => {
                                 history.go(0);
-                                });
-
-                        }else{
-                            swal("修改失败",'','error');
+                            })
+                        } else {
+                            swal.fire('修改失败', "", 'error');
                         }
-                    }
+                    },
                 });
+            }
+        })
+    };
 
-            });
+    function edit_name(id) {
+        swal.fire({
+            title: '输入名称',
+            input: 'text',
+            inputAttributes: {
+                autocapitalize: 'off',
+            },
+            showCancelButton: true,
+            confirmButtonText: '修改',
+            cancelButtonText: '取消',
+            showLoaderOnConfirm: true,
+            inputValidator:(inputvalues)=>{
+                if(!inputvalues){
+                   return "您必须填写一个角色名称";
+                }
+            },
+            preConfirm:()=>{
+                allowOutsideClick:false;
+        }
+        }).then(function(valuse){
+           if(valuse.value){
+               $.ajax({
+                   url: "<?=Url::to(['userrole/edit-name'])?>",
+                   type: 'post',
+                   data: {'id': id, 'name': valuse.value},
+                   dataType: 'json',
+                   success: function (data) {
+                       $data1 = eval(data);
+                       if ($data1.code == 1) {
+                           swal.fire({
+                               title: "修改成功",
+                               icon: "success",
+                               showCancelButton: false,
+                               confirmButtonColor: "#DD6B55",
+                               confirmButtonText: "确定",
+
+                           }).then( function () {
+                               history.go(0);
+                           });
+
+                       } else {
+                           swal.fire("修改失败", '', 'error');
+                       }
+                   }
+               });
+           }
+        });
     };
 </script>
