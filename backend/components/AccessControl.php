@@ -39,7 +39,7 @@ class AccessControl extends ActionFilter
 
         $role_info = ArrayHelper::map($role_info, 'permission_id', 'permission_route');
         //超级管理员
-        if($user_role===1){
+        if($user_role==="1"){
             return true;
         }
         //验证权限

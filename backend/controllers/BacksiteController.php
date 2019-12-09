@@ -30,9 +30,9 @@ class BacksiteController extends Controller
     public function actionLogin()
     {
         $this->layout = "main-login";
-//        if (!Yii::$app->user->isGuest) {
-//            return $this->goHome();
-//        }
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
 
         $model = new BackLoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {

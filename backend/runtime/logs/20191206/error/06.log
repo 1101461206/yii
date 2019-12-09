@@ -9473,3 +9473,707 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2019-12-06 16:53:53 [::1][54][7a467b6d93dd53f7f28feda4d9d0cb48][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backsite/login', Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2019-12-06 16:53:53 [::1][54][7a467b6d93dd53f7f28feda4d9d0cb48][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'wojKKgIkix6OeLx4evNCKGpWWyEHDPmTLZaWnOnukT6NsKVhb3b8M-AAyEotgxtsWAwIdnJ_ivRs19uksKLiZA=='
+    'BackLoginForm' => [
+        'username' => 'zhaozilong'
+        'password_hash' => 'wanan521zhao'
+        'verifyCode' => 'vufeb'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '7a467b6d93dd53f7f28feda4d9d0cb48'
+    '_csrf-backend' => '5c3db6c2481ae5b63881730adddd207a5f27e977039b16c293e4f3eafc355180a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"whw-l8BPkxYNLIJoaFh3OmUn4qANnf61\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'mcteeu'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '319'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=7a467b6d93dd53f7f28feda4d9d0cb48; _csrf-backend=5c3db6c2481ae5b63881730adddd207a5f27e977039b16c293e4f3eafc355180a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22whw-l8BPkxYNLIJoaFh3OmUn4qANnf61%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51459'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/backsite/login'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/backsite/login'
+    'PHP_SELF' => '/backend/web/index.php/backsite/login'
+    'REQUEST_TIME_FLOAT' => 1575622433.5
+    'REQUEST_TIME' => 1575622433
+    'argv' => []
+    'argc' => 0
+]
+2019-12-06 16:55:01 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex/index', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-06 16:55:01 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '586b2ac71fc8a7274c28936ea9e1eea8'
+    '_csrf-backend' => '5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'qahbw'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/user-backend/index'
+    'HTTP_COOKIE' => 'advanced-backend=586b2ac71fc8a7274c28936ea9e1eea8; _csrf-backend=5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51481'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsindex/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsindex/index'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsindex/index'
+    'PHP_SELF' => '/backend/web/index.php/imsindex/index'
+    'REQUEST_TIME_FLOAT' => 1575622501.28
+    'REQUEST_TIME' => 1575622501
+    'argv' => []
+    'argc' => 0
+]
+2019-12-06 16:55:15 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'role_permission_id' doesn't have a default value in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/web/yii/backend/models/UserPermissionRelation.php(117): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/UserroleController.php(132): backend\models\UserPermissionRelation->allinster(Array)
+#4 [internal function]: backend\controllers\UserroleController->actionRole()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('role', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('userrole/role', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'role_permission_id' doesn't have a default value
+The SQL being executed was: INSERT INTO `user_permission_relation` (`role_id`, `permission_id`, `create_time`) VALUES ('1', '2', 1575622515), ('1', '3', 1575622515), ('1', '4', 1575622515), ('1', '5', 1575622515), ('1', '6', 1575622515), ('1', '26', 1575622515), ('1', '19', 1575622515), ('1', '21', 1575622515), ('1', '22', 1575622515), ('1', '23', 1575622515), ('1', '24', 1575622515), ('1', '25', 1575622515), ('1', '7', 1575622515), ('1', '9', 1575622515), ('1', '8', 1575622515), ('1', '10', 1575622515) in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/web/yii/backend/models/UserPermissionRelation.php(117): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/UserroleController.php(132): backend\models\UserPermissionRelation->allinster(Array)
+#4 [internal function]: backend\controllers\UserroleController->actionRole()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('role', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('userrole/role', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'role_permission_id' doesn't have a default value
+)
+
+2019-12-06 16:55:15 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'mrlJJQ30GbNQ35Q4V1ba5eK5Bi6-9pjPvAj9f6RpyISt3yBzOJhMyjWTzkwaEa63i4pAV4y5yKXLaptN3C795g=='
+    'role_id' => '1'
+    'permission_id' => [
+        0 => '2'
+        1 => '3'
+        2 => '4'
+        3 => '5'
+        4 => '6'
+        5 => '26'
+        6 => '19'
+        7 => '21'
+        8 => '22'
+        9 => '23'
+        10 => '24'
+        11 => '25'
+        12 => '7'
+        13 => '9'
+        14 => '8'
+        15 => '10'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '586b2ac71fc8a7274c28936ea9e1eea8'
+    '_csrf-backend' => '5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'qahbw'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------8557162493250129841442307767'
+    'CONTENT_LENGTH' => '2306'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/userrole/role?id=1'
+    'HTTP_COOKIE' => 'advanced-backend=586b2ac71fc8a7274c28936ea9e1eea8; _csrf-backend=5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51481'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/web/index.php/userrole/role?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/userrole/role'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/userrole/role'
+    'PHP_SELF' => '/backend/web/index.php/userrole/role'
+    'REQUEST_TIME_FLOAT' => 1575622515.37
+    'REQUEST_TIME' => 1575622515
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2019-12-06 17:09:57 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'role_permission_id' doesn't have a default value in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/web/yii/backend/models/UserPermissionRelation.php(117): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/UserroleController.php(132): backend\models\UserPermissionRelation->allinster(Array)
+#4 [internal function]: backend\controllers\UserroleController->actionRole()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('role', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('userrole/role', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'role_permission_id' doesn't have a default value
+The SQL being executed was: INSERT INTO `user_permission_relation` (`role_id`, `permission_id`, `create_time`) VALUES ('1', '2', 1575623397), ('1', '3', 1575623397), ('1', '4', 1575623397), ('1', '5', 1575623397), ('1', '6', 1575623397), ('1', '26', 1575623397), ('1', '19', 1575623397), ('1', '21', 1575623397), ('1', '22', 1575623397), ('1', '23', 1575623397), ('1', '24', 1575623397), ('1', '25', 1575623397), ('1', '7', 1575623397), ('1', '9', 1575623397), ('1', '8', 1575623397), ('1', '10', 1575623397) in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/web/yii/backend/models/UserPermissionRelation.php(117): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/UserroleController.php(132): backend\models\UserPermissionRelation->allinster(Array)
+#4 [internal function]: backend\controllers\UserroleController->actionRole()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('role', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('userrole/role', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'role_permission_id' doesn't have a default value
+)
+
+2019-12-06 17:09:57 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'mrlJJQ30GbNQ35Q4V1ba5eK5Bi6-9pjPvAj9f6RpyISt3yBzOJhMyjWTzkwaEa63i4pAV4y5yKXLaptN3C795g=='
+    'role_id' => '1'
+    'permission_id' => [
+        0 => '2'
+        1 => '3'
+        2 => '4'
+        3 => '5'
+        4 => '6'
+        5 => '26'
+        6 => '19'
+        7 => '21'
+        8 => '22'
+        9 => '23'
+        10 => '24'
+        11 => '25'
+        12 => '7'
+        13 => '9'
+        14 => '8'
+        15 => '10'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '586b2ac71fc8a7274c28936ea9e1eea8'
+    '_csrf-backend' => '5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'qahbw'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/userrole/role?id=1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------8557162493250129841442307767'
+    'CONTENT_LENGTH' => '2306'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=586b2ac71fc8a7274c28936ea9e1eea8; _csrf-backend=5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51571'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/web/index.php/userrole/role?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/userrole/role'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/userrole/role'
+    'PHP_SELF' => '/backend/web/index.php/userrole/role'
+    'REQUEST_TIME_FLOAT' => 1575623397.73
+    'REQUEST_TIME' => 1575623397
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2019-12-06 17:15:21 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user-backend/in...', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-06 17:15:21 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '586b2ac71fc8a7274c28936ea9e1eea8'
+    '_csrf-backend' => '5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'qahbw'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=586b2ac71fc8a7274c28936ea9e1eea8; _csrf-backend=5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51692'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/user-backend/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/user-backend/index'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/user-backend/index'
+    'PHP_SELF' => '/backend/web/index.php/user-backend/index'
+    'REQUEST_TIME_FLOAT' => 1575623721.3
+    'REQUEST_TIME' => 1575623721
+    'argv' => []
+    'argc' => 0
+]
+2019-12-06 17:15:22 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user-backend/in...', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-06 17:15:22 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '586b2ac71fc8a7274c28936ea9e1eea8'
+    '_csrf-backend' => '5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'qahbw'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=586b2ac71fc8a7274c28936ea9e1eea8; _csrf-backend=5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51692'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/user-backend/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/user-backend/index'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/user-backend/index'
+    'PHP_SELF' => '/backend/web/index.php/user-backend/index'
+    'REQUEST_TIME_FLOAT' => 1575623722.49
+    'REQUEST_TIME' => 1575623722
+    'argv' => []
+    'argc' => 0
+]
+2019-12-06 17:15:25 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user-backend/in...', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-06 17:15:25 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '586b2ac71fc8a7274c28936ea9e1eea8'
+    '_csrf-backend' => '5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'qahbw'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/userrole/index'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=586b2ac71fc8a7274c28936ea9e1eea8; _csrf-backend=5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51692'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/user-backend/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/user-backend/index'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/user-backend/index'
+    'PHP_SELF' => '/backend/web/index.php/user-backend/index'
+    'REQUEST_TIME_FLOAT' => 1575623725.91
+    'REQUEST_TIME' => 1575623725
+    'argv' => []
+    'argc' => 0
+]
+2019-12-06 17:15:46 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'role_permission_id' doesn't have a default value in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/web/yii/backend/models/UserPermissionRelation.php(117): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/UserroleController.php(132): backend\models\UserPermissionRelation->allinster(Array)
+#4 [internal function]: backend\controllers\UserroleController->actionRole()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('role', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('userrole/role', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'role_permission_id' doesn't have a default value
+The SQL being executed was: INSERT INTO `user_permission_relation` (`role_id`, `permission_id`, `create_time`) VALUES ('1', '2', 1575623746), ('1', '11', 1575623746), ('1', '3', 1575623746), ('1', '4', 1575623746), ('1', '5', 1575623746), ('1', '6', 1575623746), ('1', '26', 1575623746), ('1', '19', 1575623746), ('1', '21', 1575623746), ('1', '22', 1575623746), ('1', '23', 1575623746), ('1', '24', 1575623746), ('1', '25', 1575623746), ('1', '7', 1575623746), ('1', '9', 1575623746), ('1', '8', 1575623746), ('1', '10', 1575623746) in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/web/yii/backend/models/UserPermissionRelation.php(117): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/web/yii/backend/controllers/UserroleController.php(132): backend\models\UserPermissionRelation->allinster(Array)
+#4 [internal function]: backend\controllers\UserroleController->actionRole()
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('role', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('userrole/role', Array)
+#9 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'role_permission_id' doesn't have a default value
+)
+
+2019-12-06 17:15:46 [::1][54][586b2ac71fc8a7274c28936ea9e1eea8][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'urxQ7-qxUb2uTt2OMOG4d14FS-_t58er8g1RcBIVwxKN2jm5390ExMsCh_p9pswlNzYNlt-ol8GFbzdCalL2cA=='
+    'role_id' => '1'
+    'permission_id' => [
+        0 => '2'
+        1 => '11'
+        2 => '3'
+        3 => '4'
+        4 => '5'
+        5 => '6'
+        6 => '26'
+        7 => '19'
+        8 => '21'
+        9 => '22'
+        10 => '23'
+        11 => '24'
+        12 => '25'
+        13 => '7'
+        14 => '9'
+        15 => '8'
+        16 => '10'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '586b2ac71fc8a7274c28936ea9e1eea8'
+    '_csrf-backend' => '5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b\";}'
+    '_identity' => '0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[\"54\",\"RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'qahbw'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => '54'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------7123263310584714522122645663'
+    'CONTENT_LENGTH' => '2427'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/userrole/role?id=1'
+    'HTTP_COOKIE' => 'advanced-backend=586b2ac71fc8a7274c28936ea9e1eea8; _csrf-backend=5be4392f317349941bead18d2ee165ab590aec1c2a26db74504ac1864c57ed11a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227fiV5lUyeLZtMGtRi3Fy2OPjwbf2xG5b%22%3B%7D; _identity=0b243bb485bd0476f0c10305b966c59083d762a6324de469dab9a2c7c735182ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2254%22%2C%22RcudAHFHbHZU4TwEx7up1sYx0Uyh3v00%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '51701'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/web/index.php/userrole/role?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/userrole/role'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/userrole/role'
+    'PHP_SELF' => '/backend/web/index.php/userrole/role'
+    'REQUEST_TIME_FLOAT' => 1575623746.74
+    'REQUEST_TIME' => 1575623746
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
