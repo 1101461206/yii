@@ -40,6 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="box-header">
             <?= Html::a("添加权限", ['create'], ['class' => 'btn btn-success btn-sm pull-left']) ?>
+            <?= Html::button("刷新", ['class' => 'btn btn-success btn-sm pull-left ','id'=>'res','style'=>'margin-left: 5px']) ?>
         </div>
 
         <div class="box-body">
@@ -183,6 +184,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 <script>
+    
     function del(id, status) {
         swal.fire({
             title: "确定要修改状态吗",
@@ -263,46 +265,30 @@ $this->params['breadcrumbs'][] = $this->title;
 
     };
 
-    function edit_name(id) {
-        swal({
-            title: '输入名称',
-            type: 'input',
-            showCancelButton: true,
-            closeOnConfirm: false,
-            confirmButtonText: '修改',
-            cancelButtonText: '取消',
-            animation: 'slide-from-top',
-        }, function (inputValue) {
-            // if(inputValue==false) return false;
-            if (inputValue == '') {
-                swal.showInputError('名称不能为空');
-                return false;
-            }
-            $.ajax({
-                url: "<?=Url::to(['userrole/edit-name'])?>",
-                type: 'post',
-                data: {'id': id, 'name': inputValue},
-                dataType: 'json',
-                success: function (data) {
-                    $data1 = eval(data);
-                    if ($data1.code == 1) {
-                        swal({
-                            title: "修改成功",
-                            type: "success",
-                            showCancelButton: false,
-                            confirmButtonColor: "#DD6B55",
-                            confirmButtonText: "确定",
 
-                        }, function () {
-                            history.go(0);
-                        });
-
-                    } else {
-                        swal("修改失败", '', 'error');
-                    }
+    function res(){
+        $.ajax({
+            url:"<?=Url::to(['userpermission/reset'])?>",
+            type:'post',
+            data:'',
+            dataType:'json',
+            success:function (data) {
+                if(data){
+                    swal.fire({
+                        title: "刷新成功",
+                        icon: "success",
+                        showCancelButton: false,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定",
+                    }).then((willDelete=>{
+                         history.go(0);
+                    }))
                 }
-            });
-
+            }
         });
-    };
+    }
+
+    $(function () {
+        $('#res').click(function(){res();});
+    })
 </script>

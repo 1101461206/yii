@@ -575,3 +575,3454 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2019-12-09 16:17:34 [::1][53][769e61004baa912c628f17bea1e99081][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/user". in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/user', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2019-12-09 16:17:34 [::1][53][769e61004baa912c628f17bea1e99081][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '769e61004baa912c628f17bea1e99081'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+    '_identity' => '63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'voyrde'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/user-backend/index'
+    'HTTP_COOKIE' => 'advanced-backend=769e61004baa912c628f17bea1e99081; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D; _identity=63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62299'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/user/user'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/user/user'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/user/user'
+    'PHP_SELF' => '/backend/web/index.php/user/user'
+    'REQUEST_TIME_FLOAT' => 1575879454.8
+    'REQUEST_TIME' => 1575879454
+    'argv' => []
+    'argc' => 0
+]
+2019-12-09 16:17:48 [::1][53][769e61004baa912c628f17bea1e99081][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: user-backend/adduser.html in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('adduser.html', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user-backend/ad...', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2019-12-09 16:17:48 [::1][53][769e61004baa912c628f17bea1e99081][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '769e61004baa912c628f17bea1e99081'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+    '_identity' => '63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'voyrde'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=769e61004baa912c628f17bea1e99081; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D; _identity=63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62302'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/user-backend/adduser.html'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/user-backend/adduser.html'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/user-backend/adduser.html'
+    'PHP_SELF' => '/backend/web/index.php/user-backend/adduser.html'
+    'REQUEST_TIME_FLOAT' => 1575879468.48
+    'REQUEST_TIME' => 1575879468
+    'argv' => []
+    'argc' => 0
+]
+2019-12-09 16:18:28 [::1][53][769e61004baa912c628f17bea1e99081][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('imglist', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex/imglis...', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:18:28 [::1][53][769e61004baa912c628f17bea1e99081][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '769e61004baa912c628f17bea1e99081'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+    '_identity' => '63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'voyrde'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=769e61004baa912c628f17bea1e99081; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D; _identity=63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62313'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsindex/imglist'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsindex/imglist'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsindex/imglist'
+    'PHP_SELF' => '/backend/web/index.php/imsindex/imglist'
+    'REQUEST_TIME_FLOAT' => 1575879508.31
+    'REQUEST_TIME' => 1575879508
+    'argv' => []
+    'argc' => 0
+]
+2019-12-09 16:20:24 [::1][53][769e61004baa912c628f17bea1e99081][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('imglist', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('imsindex/imglis...', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:20:24 [::1][53][769e61004baa912c628f17bea1e99081][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '769e61004baa912c628f17bea1e99081'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+    '_identity' => '63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[53,\"CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'voyrde'
+    '__captcha/backsite/captchacount' => 1
+    '__id' => 53
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=769e61004baa912c628f17bea1e99081; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D; _identity=63d6defe6a58709c95b3ab11b39e3edac18d81768b631bd9e9888a6cfd064a87a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B53%2C%22CX75mB4rL1YQ-uKWKHGbtpob3H7DSNdp%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62322'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php/imsindex/imglist'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/imsindex/imglist'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/imsindex/imglist'
+    'PHP_SELF' => '/backend/web/index.php/imsindex/imglist'
+    'REQUEST_TIME_FLOAT' => 1575879624.42
+    'REQUEST_TIME' => 1575879624
+    'argv' => []
+    'argc' => 0
+]
+2019-12-09 16:20:30 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][Error] Error: Call to a member function getUniqueId() on string in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Action.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(131): yii\base\Action->getUniqueId()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('captcha', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backsite/captch...', Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2019-12-09 16:20:30 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'v' => '5dee03ce5e7b67.50480290'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/backsite/logout'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'v=5dee03ce5e7b67.50480290'
+    'REQUEST_URI' => '/backend/web/index.php/backsite/captcha?v=5dee03ce5e7b67.50480290'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/backsite/captcha'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/backsite/captcha'
+    'PHP_SELF' => '/backend/web/index.php/backsite/captcha'
+    'REQUEST_TIME_FLOAT' => 1575879630.44
+    'REQUEST_TIME' => 1575879630
+    'argv' => [
+        0 => 'v=5dee03ce5e7b67.50480290'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:20:32 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][Error] Error: Call to a member function getUniqueId() on string in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Action.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(131): yii\base\Action->getUniqueId()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('captcha', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backsite/captch...', Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2019-12-09 16:20:32 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'refresh' => '1'
+    '_' => '1575879630466'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => '5HX3DuU5c-Aevkfw-QFfnhvrDosmXydQHPMlHXhahnK7R7h-gX8-iUnENZytRwrWUYFkvkoMVz1dnhRyFTHIMA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/backsite/logout'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62322'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'refresh=1&_=1575879630466'
+    'REQUEST_URI' => '/backend/web/index.php/backsite/captcha?refresh=1&_=1575879630466'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/backsite/captcha'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/backsite/captcha'
+    'PHP_SELF' => '/backend/web/index.php/backsite/captcha'
+    'REQUEST_TIME_FLOAT' => 1575879632.52
+    'REQUEST_TIME' => 1575879632
+    'argv' => [
+        0 => 'refresh=1&_=1575879630466'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:20:32 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][Error] Error: Call to a member function getUniqueId() on string in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Action.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(131): yii\base\Action->getUniqueId()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('captcha', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backsite/captch...', Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2019-12-09 16:20:32 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'refresh' => '1'
+    '_' => '1575879630467'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => '5HX3DuU5c-Aevkfw-QFfnhvrDosmXydQHPMlHXhahnK7R7h-gX8-iUnENZytRwrWUYFkvkoMVz1dnhRyFTHIMA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/backsite/logout'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62325'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'refresh=1&_=1575879630467'
+    'REQUEST_URI' => '/backend/web/index.php/backsite/captcha?refresh=1&_=1575879630467'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/backsite/captcha'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/backsite/captcha'
+    'PHP_SELF' => '/backend/web/index.php/backsite/captcha'
+    'REQUEST_TIME_FLOAT' => 1575879632.75
+    'REQUEST_TIME' => 1575879632
+    'argv' => [
+        0 => 'refresh=1&_=1575879630467'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:20:46 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][Error] Error: Call to a member function getUniqueId() on string in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Action.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(131): yii\base\Action->getUniqueId()
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('captcha', Array)
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('backsite/captch...', Array)
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2019-12-09 16:20:46 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'v' => '5dee03ddeb2145.23249369'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php/backsite/logout'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62326'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'v=5dee03ddeb2145.23249369'
+    'REQUEST_URI' => '/backend/web/index.php/backsite/captcha?v=5dee03ddeb2145.23249369'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PATH_INFO' => '/backsite/captcha'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/web/yii/backsite/captcha'
+    'PHP_SELF' => '/backend/web/index.php/backsite/captcha'
+    'REQUEST_TIME_FLOAT' => 1575879646.02
+    'REQUEST_TIME' => 1575879646
+    'argv' => [
+        0 => 'v=5dee03ddeb2145.23249369'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:20 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'user-backend'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62363'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user-backend'
+    'REQUEST_URI' => '/backend/web/index.php?r=user-backend'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879860.04
+    'REQUEST_TIME' => 1575879860
+    'argv' => [
+        0 => 'r=user-backend'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:25 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:25 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=user-backend'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879865.45
+    'REQUEST_TIME' => 1575879865
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:27 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879867.18
+    'REQUEST_TIME' => 1575879867
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:27 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879867.7
+    'REQUEST_TIME' => 1575879867
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:28 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879867.96
+    'REQUEST_TIME' => 1575879867
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:28 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879868.19
+    'REQUEST_TIME' => 1575879868
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:28 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879868.62
+    'REQUEST_TIME' => 1575879868
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:32 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879872.71
+    'REQUEST_TIME' => 1575879872
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:33 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879873.28
+    'REQUEST_TIME' => 1575879873
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:33 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879873.71
+    'REQUEST_TIME' => 1575879873
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:34 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879874.2
+    'REQUEST_TIME' => 1575879874
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:40 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/logout'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62367'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite%2Flogout'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite%2Flogout'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879880.93
+    'REQUEST_TIME' => 1575879880
+    'argv' => [
+        0 => 'r=backsite%2Flogout'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:41 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62367'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879881.05
+    'REQUEST_TIME' => 1575879881
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:42 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62367'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879882.18
+    'REQUEST_TIME' => 1575879882
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:56 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62369'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879896.75
+    'REQUEST_TIME' => 1575879896
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:24:56 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:24:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62369'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879896.86
+    'REQUEST_TIME' => 1575879896
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:25:01 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:25:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62369'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879901.15
+    'REQUEST_TIME' => 1575879901
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:25:01 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:25:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62369'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879901.26
+    'REQUEST_TIME' => 1575879901
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:25:56 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:25:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62382'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879956.17
+    'REQUEST_TIME' => 1575879956
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:25:57 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:25:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62382'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879956.96
+    'REQUEST_TIME' => 1575879956
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:33 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879993.7
+    'REQUEST_TIME' => 1575879993
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:34 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879994.76
+    'REQUEST_TIME' => 1575879994
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:35 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879995.31
+    'REQUEST_TIME' => 1575879995
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:35 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879995.62
+    'REQUEST_TIME' => 1575879995
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:36 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879995.98
+    'REQUEST_TIME' => 1575879995
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:39 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879999.32
+    'REQUEST_TIME' => 1575879999
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:39 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575879999.89
+    'REQUEST_TIME' => 1575879999
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:26:50 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:26:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62393'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880010.62
+    'REQUEST_TIME' => 1575880010
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:27:35 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:27:35 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii/backend/web/index.php?r=backsite/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62420'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880055.9
+    'REQUEST_TIME' => 1575880055
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:27:39 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:48
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:27:39 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62420'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880059.65
+    'REQUEST_TIME' => 1575880059
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:30:02 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:30:02 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62451'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880202.69
+    'REQUEST_TIME' => 1575880202
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:30:05 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:30:05 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62451'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880205.01
+    'REQUEST_TIME' => 1575880205
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:31:46 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:31:46 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62463'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880306.58
+    'REQUEST_TIME' => 1575880306
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:32:06 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:32:06 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62466'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880326.62
+    'REQUEST_TIME' => 1575880326
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:32:07 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:32:07 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62466'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880327.58
+    'REQUEST_TIME' => 1575880327
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:32:08 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 16:32:08 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62466'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880328.06
+    'REQUEST_TIME' => 1575880328
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:38:21 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-09 16:38:21 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62581'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880701.68
+    'REQUEST_TIME' => 1575880701
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:39:02 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-09 16:39:02 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62591'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880742.7
+    'REQUEST_TIME' => 1575880742
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 16:39:03 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-09 16:39:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '62592'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575880743.78
+    'REQUEST_TIME' => 1575880743
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 17:19:17 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-09 17:19:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '63679'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575883157.18
+    'REQUEST_TIME' => 1575883157
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 17:20:15 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:50
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-09 17:20:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '63683'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575883215.44
+    'REQUEST_TIME' => 1575883215
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 17:20:16 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:50
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-09 17:20:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '63684'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575883216.54
+    'REQUEST_TIME' => 1575883216
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 17:30:04 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: 没有权限! in /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php:50
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2019-12-09 17:30:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '63893'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575883804.94
+    'REQUEST_TIME' => 1575883804
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]
+2019-12-09 17:33:13 [::1][-][6c0fe1fb2294f8fb2641154180551186][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\web\Request::pathInfo() in /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /Applications/MAMP/htdocs/web/yii/backend/components/AccessControl.php(21): yii\base\Component->__call('pathInfo', Array)
+#1 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/ActionFilter.php(77): backend\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#8 /Applications/MAMP/htdocs/web/yii/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/web/yii/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2019-12-09 17:33:13 [::1][-][6c0fe1fb2294f8fb2641154180551186][info][application] $_GET = [
+    'r' => 'backsite/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '6c0fe1fb2294f8fb2641154180551186'
+    '_csrf-backend' => 'f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/backsite/captcha' => 'zobuv'
+    '__captcha/backsite/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:71.0) Gecko/20100101 Firefox/71.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-backend=6c0fe1fb2294f8fb2641154180551186; _csrf-backend=f1f35a84ed234ad22b28eb8f1853e4291f9f8cbd709986334fd0cc479431e9d0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_2OpdFMiWzrlTFUHJjj5lSpmAm1omkNB%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/web/yii'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/web/yii/backend/web/index.php'
+    'REMOTE_PORT' => '64051'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backsite/login'
+    'REQUEST_URI' => '/backend/web/index.php?r=backsite/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1575883993.65
+    'REQUEST_TIME' => 1575883993
+    'argv' => [
+        0 => 'r=backsite/login'
+    ]
+    'argc' => 1
+]

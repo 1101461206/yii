@@ -10,7 +10,7 @@ use yii\helpers\Html;
 $this->title = "";
 ?>
 <section class="content">
-
+    <h1><?= Html::encode($this->title) ?></h1>
     <div class="error-page content" style="text-align: center">
         <h2 class="text-info" style="font-size: 100px;font-weight: 300;"><i class="fa fa-warning text-yellow"></i></h2>
         <p class="clearfix"></p>
@@ -24,7 +24,6 @@ $this->title = "";
             <p>
                 请您联系管理员！
             </p>
-
         </div>
     </div>
 

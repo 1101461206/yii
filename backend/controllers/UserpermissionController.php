@@ -9,6 +9,9 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\helpers\Url;
+use backend\models\Userrole;
+use backend\models\UserPermissionRelation;
+
 
 /**
  * UserpermissionController implements the CRUD actions for Userpermission model.
@@ -18,21 +21,21 @@ class UserpermissionController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
-    {
-        return [
-            // 'myBehavior' => \backend\components\MyBehavior::className(),
-            'as access'=>[
-                'class' => 'backend\components\AccessControl',
-            ],
-            'verbs' => [
-                'class'=>VerbFilter::className(),
-                'actions'=>[
-                    'delete'=>['POST'],
-                ],
-            ],
-        ];
-    }
+//    public function behaviors()
+//    {
+//        return [
+//            // 'myBehavior' => \backend\components\MyBehavior::className(),
+//            'as access'=>[
+//                'class' => 'backend\components\AccessControl',
+//            ],
+//            'verbs' => [
+//                'class'=>VerbFilter::className(),
+//                'actions'=>[
+//                    'delete'=>['POST'],
+//                ],
+//            ],
+//        ];
+//    }
 
     /**
      * Lists all Userpermission models.
@@ -213,6 +216,48 @@ class UserpermissionController extends Controller
         ]);
 
     }
+
+    /**
+     * 刷新权限
+     */
+
+    public function actionReset(){
+        $role_model=new Userrole();
+        $role=$role_model->find()->select(['roleid'])->asArray()->all();
+        foreach ($role as $k=>$v){
+            $userrole = new UserPermissionRelation();
+            $info = $userrole->menu($v['roleid']);
+            $cache_id="role".$v['roleid'];
+            $cache=Yii::$app->cache;
+            $cache->flush($cache_id);
+           // $menu=$cache->get($cache_id);
+            // $menu=false;
+                $menu = array();
+                foreach ($info as $k => $v) {
+                    $menu[$v['permission_id']] = array(
+                        'label' => $v['permission_name'],
+                        'icon' => '',
+                        'url' => $v['permission_route'] ? $v['permission_route'] : '#',
+                    );
+                    if(!empty($v['list'])) {
+                        if (count($v['list'] > 0)) {
+                            foreach ($v['list'] as $kk => $vv) {
+                                $menu[$v['permission_id']]['items'][] = array(
+                                    'label' => $vv['permission_name'],
+                                    'icon' => '',
+                                    'url' => $vv['permission_route'] ? [$vv['permission_route']] : '#',
+                                );
+                            }
+                        }
+                    }
+                }
+                $cache->set($cache_id,$menu);
+        }
+        return true;
+    }
+
+
+
 
     /**
      * 查询用户信息

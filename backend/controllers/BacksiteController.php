@@ -13,6 +13,7 @@ class BacksiteController extends Controller
         return [
             'captcha' => [
                 'class' => 'yii\captcha\CaptchaAction',
+               // 'class' => 'yii\captcha\Captchanum',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
               //  'backColor' => 0x000000,//背景颜色
                 'maxLength' => 6, //最大显示个数

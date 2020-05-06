@@ -3,12 +3,10 @@ namespace backend\controllers;
 
 use Yii;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\BackLoginForm;
+
 
 /**
- * Site controller
+ * 全局异常处理器
  */
 class SiteController extends Controller
 {
@@ -18,7 +16,7 @@ class SiteController extends Controller
      */
     public function actions()
     {
-        $this->layout="main-login";
+        //$this->layout=false;
 
         return [
             'error' => [
@@ -26,5 +24,14 @@ class SiteController extends Controller
             ],
         ];
     }
+
+
+//    public function actionError()
+//    {
+//        $exception = Yii::$app->errorHandler->exception;
+//        if ($exception !== null) {
+//            return $this->render('error', ['exception' => $exception]);
+//        }
+//    }
 
 }

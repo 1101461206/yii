@@ -75,7 +75,7 @@ class Helper
     /**
      * 返回值格式化
      */
-    public function mages_format($code,$msg,$type="josn",$error=""){
+    public function mages_format($code,$msg="",$type="josn",$error=""){
         switch ($type){
             case "josn":
                 $data=array(
@@ -85,8 +85,9 @@ class Helper
                 if($error){
                     $data['error']=$error;
                 }
-            $data=json_encode($data);
-                break;
+                $data=json_encode($data);
+                return $data;
+            break;
 
             default:
                 break;

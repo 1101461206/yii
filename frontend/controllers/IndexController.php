@@ -16,6 +16,7 @@ class IndexController extends \yii\web\Controller
         $img=$img_model::find()->where(['status'=>1])->asArray()->all();
         $circular_img=new ImsCircular();
         $circular=$circular_img::find()->all();
+        echo 1;
 
         return $this->render('index',[
             'info'=>$info,

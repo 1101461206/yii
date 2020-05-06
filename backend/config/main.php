@@ -12,31 +12,35 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     //默认访问地址
-    'defaultRoute'=>'user-backend/index',
-    'modules' => [],
+    'defaultRoute'=>'backsite/login',
+    //'modules' => [],
     'name'=>"管理系统",
     'bootstrap' => ['log'],
     //语言
     'language'=>"zh-CN",
     //时区
     'timeZone'=>'Asia/beijing',
-    'modules'=>[
+    'modules' => [
         'redactor' => [
-            'class' => 'common\components\RedactorModule',
-            'uploadDir' => '@frontendupload/',       // 比如这里可以填写 ./uploads
-            'uploadUrl' => '/frontend/web/upload/',  // 编辑器里展示的地址
-            'imageAllowExtensions'=>['jpg','png','gif'],
+            'class' => 'yii\redactor\RedactorModule',
+            'uploadDir' => '@backendupload',
+            'uploadUrl' => '@backendredac',
+            'imageAllowExtensions'=>['jpg','png','gif','jpeg'],
         ],
+    ],
+    'as access' => [
+        'class' => 'backend\components\AccessControl',
     ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
-        ],
+         ],
         //用户认证配置
         'user' => [
             'identityClass' => 'backend\models\Userbackend',
             'enableAutoLogin' => true,
-            'loginUrl'=>array('backsite/login'),
+
+            'loginUrl'=>['backsite/login'],
            // 'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
         'session' => [

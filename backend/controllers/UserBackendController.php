@@ -24,21 +24,21 @@ class UserBackendController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
-    {
-        return [
-            // 'myBehavior' => \backend\components\MyBehavior::className(),
-            'as access'=>[
-                'class' => 'backend\components\AccessControl',
-            ],
-            'verbs' => [
-                'class'=>VerbFilter::className(),
-                'actions'=>[
-                    'delete'=>['POST'],
-                ],
-            ],
-        ];
-    }
+//    public function behaviors()
+//    {
+//        return [
+//            // 'myBehavior' => \backend\components\MyBehavior::className(),
+//            'as access'=>[
+//                'class' => 'backend\components\AccessControl',
+//            ],
+//            'verbs' => [
+//                'class'=>VerbFilter::className(),
+//                'actions'=>[
+//                    'delete'=>['POST'],
+//                ],
+//            ],
+//        ];
+//    }
 
     /**
      * Lists all UserBackend models.
@@ -72,7 +72,7 @@ class UserBackendController extends Controller
                 $model->thumb = !empty($thumb['img_url']) ? $thumb['img_url'] : "";
                 $model->img = !empty($img['img_url']) ? $img['img_url'] : "";
             } elseif ($img['code'] == 2) {
-                Yii::$app->getSession()->setFlash('error', '保存失败');
+                Yii::$app->getSession()->setFlash('error', '图片保存失败');
             }
             if ($model->signup()) {
                 Yii::$app->plog->ins('user-backend/adduser','添加管理员--'.$model->username,1);
