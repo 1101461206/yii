@@ -174,7 +174,7 @@ AppAsset::register($this);
     <div class="copyrights">
         <div class="container">
             <div class="col-lg-6 col-md-6 col-sm-12 columns footer-left">
-                <p>Copyright © 2014 - All rights reserved.</p>
+                <p><a href="http://beian.miit.gov.cn">京ICP备19003026号-1</a></p>
                 <div class="credits">
                     <!--
                       You are NOT allowed to delete the credit link to TemplateMag with free version.
@@ -182,7 +182,7 @@ AppAsset::register($this);
                       Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/maxibiz-bootstrap-business-template/
                       Licensing information: https://templatemag.com/license/
                     -->
-                    Created with MaxiBiz template by <a href="https://templatemag.com/">TemplateMag</a>
+<!--                    Created with MaxiBiz template by <a href="https://templatemag.com/">TemplateMag</a>-->
                 </div>
             </div>
             <!-- end widget -->
