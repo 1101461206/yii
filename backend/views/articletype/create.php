@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\imsArticleType */
 
-$this->title = 'Create Ims Article Type';
+$this->title = '添加新闻类别';
 $this->params['breadcrumbs'][] = ['label' => 'Ims Article Types', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

@@ -7,9 +7,9 @@ return [
 //        ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii',
+            'dsn' => 'mysql:host=cdb-5t2zblr8.cd.tencentcdb.com:10035;dbname=yii',
             'username' => 'root',
-            'password' => 'root',
+            'password' => 'wanan521zhao',
             'charset' => 'utf8',
         ],
         'mailer' => [

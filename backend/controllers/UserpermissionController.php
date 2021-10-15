@@ -166,6 +166,7 @@ class UserpermissionController extends Controller
      * 权限
      */
     public function actionRolelist(){
+       $where="";
        $permission_name=Yii::$app->request->get('Userpermission');
         if($permission_name['permission_name']){
             $where=array('permission_name'=>$permission_name['permission_name']);

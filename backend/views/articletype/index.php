@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
         //'filterModel' => $searchModel,
         'tableOptions' => ['class' => 'table table-bordered table-striped text-center'],
         'layout' => '<div class="box box-primary">
-                <div class="box-header">' . Html::a("添加角色", ['create'], ['class' => 'btn btn-success btn-sm pull-left']) . '
+                <div class="box-header">' . Html::a("添加类别", ['create'], ['class' => 'btn btn-success btn-sm pull-left']) . '
                     <div class="pull-right col-xs-2">
                         {summary}
                     </div>

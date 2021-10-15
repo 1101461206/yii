@@ -39,47 +39,7 @@
 
 
 
-        <!-- large-4 -->
 
-<!--        <div class="col-lg-4 col-md-4 col-sm-4">-->
-<!--            <div class="servicebox text-center">-->
-<!--                <div class="service-icon">-->
-<!--                    <div class="dm-icon-effect-1" data-effect="slide-bottom">-->
-<!--                        <a href="--><?////=$info->xiaochengxu?><!--" class="" data-rel="prettyPhoto"> <i class="active dm-icon fa fa-shopping-cart fa-3x"></i> </a>-->
-<!--                    </div>-->
-<!--                    <div class="servicetitle">-->
-<!--                        <h4>进入"爱风尚"官方小程序</h4>-->
-<!--                        <hr>-->
-<!--                    </div>-->
-<!--                    <p>选购心仪的商品。</p>-->
-<!--                </div>-->
-                <!-- service-icon -->
-<!--            </div>-->
-            <!-- servicebox -->
-<!--        </div>-->
-        <!-- large-4 -->
-
-<!--        <div class="col-lg-4 col-md-4 col-sm-4">-->
-<!--            <div class="servicebox text-center">-->
-<!--                <div class="service-icon">-->
-<!--                    <div class="dm-icon-effect-1" data-effect="slide-right">-->
-<!--                        <a href="#" class=""> <i class="active dm-icon fa fa-institution fa-3x"></i> </a>-->
-<!--                    </div>-->
-<!--                    <div class="servicetitle">-->
-<!--                        <h4>风尚学堂</h4>-->
-<!--                        <hr>-->
-<!--                    </div>-->
-<!--                    <p>加入"风尚学堂",引领时尚舞界.</p>-->
-<!--                </div>-->
-                <!-- service-icon -->
-<!--            </div>-->
-            <!-- servicebox -->
-<!--        </div>-->
-        <!-- large-4 -->
-    </div>
-    <!-- end container -->
-</section>
-<!-- end section -->
 
 <section class="section5">
     <div class="container">
